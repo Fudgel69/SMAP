@@ -60,7 +60,7 @@ MERGED from [com.android.support:support-compat:28.0.0] C:\Users\rbl.DELEGATE\.g
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\rbl.DELEGATE\.gradle\caches\transforms-2\files-2.1\8c94da0bc5e9d5d867be433a2dea59f9\AndroidManifest.xml:22:5-23:19
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\rbl.DELEGATE\.gradle\caches\transforms-2\files-2.1\8c94da0bc5e9d5d867be433a2dea59f9\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\rbl.DELEGATE\.gradle\caches\transforms-2\files-2.1\256636a4bd152c4378c019420e1f91e1\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\tss\.gradle\caches\transforms-2\files-2.1\8fe9fa06ddc836d66679b2c417795630\AndroidManifest.xml:22:18-91
 	android:supportsRtl
 		ADDED from C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
