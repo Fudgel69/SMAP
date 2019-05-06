@@ -36,6 +36,16 @@ public class AppService extends Service {
     }
 
 
+    @Override
+    public boolean onUnbind (Intent intent){return super.onUnbind(intent);}
+
+
+    //stops the Service task, when the application is removed from the "last used"-listen
+    @Override
+    public void onTaskRemoved(Intent rootIntent) {
+        super.onTaskRemoved(rootIntent);
+        stopSelf();
+    }
 
 
 
