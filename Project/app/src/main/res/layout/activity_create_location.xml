@@ -6,4 +6,157 @@
     android:layout_height="match_parent"
     tools:context=".CreateLocationActivity">
 
+    <Button
+        android:id="@+id/btn_createlocation_gender2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_createlocation_gender"
+        app:layout_constraintEnd_toEndOf="@+id/img_createlocation_userImage"
+        app:layout_constraintStart_toStartOf="@+id/img_createlocation_userImage"
+        app:layout_constraintTop_toTopOf="@+id/txt_createlocation_gender" />
+
+    <TextView
+        android:id="@+id/txt_createlocation_title"
+        android:layout_width="357dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Route"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_createlocation_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Target Location:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_createlocation_title" />
+
+    <TextView
+        android:id="@+id/txt_createlocation_name"
+        android:layout_width="98dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Firstname:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_createlocation_target" />
+
+    <TextView
+        android:id="@+id/txt_createlocation_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Gender:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_createlocation_name" />
+
+    <TextView
+        android:id="@+id/txt_createlocation_Age"
+        android:layout_width="45dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:text="Age:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_createlocation_gender" />
+
+    <ImageView
+        android:id="@+id/img_createlocation_userImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_createlocation_Age"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btn_createlocation_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_createlocation_userImage" />
+
+    <Button
+        android:id="@+id/btn_createlocation_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_createlocation_target"
+        app:layout_constraintEnd_toEndOf="@+id/img_createlocation_userImage"
+        app:layout_constraintStart_toStartOf="@+id/img_createlocation_userImage"
+        app:layout_constraintTop_toTopOf="@+id/txt_createlocation_target"
+        app:layout_constraintVertical_bias="0.413" />
+
+    <EditText
+        android:id="@+id/edtxt_createlocation_addName"
+        android:layout_width="101dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Your name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_createlocation_name"
+        app:layout_constraintEnd_toEndOf="@+id/img_createlocation_userImage"
+        app:layout_constraintStart_toStartOf="@+id/img_createlocation_userImage"
+        app:layout_constraintTop_toTopOf="@+id/txt_createlocation_name" />
+
+    <EditText
+        android:id="@+id/edtxt_createlocation_addAge"
+        android:layout_width="84dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Your age"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_createlocation_Age"
+        app:layout_constraintEnd_toEndOf="@+id/img_createlocation_userImage"
+        app:layout_constraintStart_toStartOf="@+id/img_createlocation_userImage"
+        app:layout_constraintTop_toTopOf="@+id/txt_createlocation_Age" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="615dp" />
+
 </android.support.constraint.ConstraintLayout>

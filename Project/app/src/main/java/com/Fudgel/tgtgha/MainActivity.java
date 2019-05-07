@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
@@ -19,6 +21,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button chatButton;
 
     private static final int MY_REQUEST_CODE = 4004;
     List<AuthUI.IdpConfig> providers;
@@ -36,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
                 new AuthUI.IdpConfig.GoogleBuilder().build()
         );
 showSignInOptions();
+
+chatButton = findViewById(R.id.btn_chat);
+chatButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(MainActivity.this, ChatActivity.class);
+        startActivity(intent);
+    }
+});
     }
 
     private void showSignInOptions() {
