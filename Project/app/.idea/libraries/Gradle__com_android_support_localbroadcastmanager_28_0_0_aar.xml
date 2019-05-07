@@ -1,13 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:localbroadcastmanager:28.0.0@aar">
     <CLASSES>
-<<<<<<< Updated upstream
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68c1378579c2bb91c4ce4138354668be/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68c1378579c2bb91c4ce4138354668be/jars/classes.jar!/" />
-=======
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f74d74bcf04dba28f7015c8aec052623/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f74d74bcf04dba28f7015c8aec052623/jars/classes.jar!/" />
->>>>>>> Stashed changes
     </CLASSES>
     <JAVADOC />
     <SOURCES />

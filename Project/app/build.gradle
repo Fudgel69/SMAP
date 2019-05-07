@@ -25,27 +25,28 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 
     //Database - Room
-    implementation 'android.arch.persistence.room:runtime:1.1.1'
-    annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
+    //implementation 'android.arch.persistence.room:runtime:1.1.1'
+    //annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
 
     //Database - Firebase
-    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-database:16.1.0' // Updated 07-05-19
+    implementation 'com.google.firebase:firebase-core:16.0.8' // Updated 07-05-19
 
     //Authentication - Firebase
-    implementation 'com.google.firebase:firebase-auth:16.1.0'
+    implementation 'com.google.firebase:firebase-auth:16.2.1' // Updated 07-05-19
 
     //UI - Firebass
-    implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
-    implementation 'com.firebaseui:firebase-ui-database:4.0.0'
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.2' // Updated 07-05-19
+    implementation 'com.firebaseui:firebase-ui-database:4.3.2' // Updated 07-05-19
 
     //Facebook - Authentication
-    implementation 'com.facebook.android:facebook-android-sdk:4.0.0'
+    implementation 'com.facebook.android:facebook-android-sdk:5.0.0' // Updated 07-05-19
 
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     //Location and Mapping - GoogleMaps
-    implementation 'com.google.android.gms:play-services:12.0.1'
+    //implementation 'com.google.android.gms:play-services:12.0.1'
 }
 
 apply plugin: 'com.google.gms.google-services'
