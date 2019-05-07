@@ -7,7 +7,7 @@
     tools:context=".CreateLocationActivity">
 
     <Button
-        android:id="@+id/btn_createlocation_gender2"
+        android:id="@+id/btn_createlocation_addGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Choose"
@@ -117,7 +117,7 @@
         app:layout_constraintTop_toBottomOf="@+id/img_createlocation_userImage" />
 
     <Button
-        android:id="@+id/btn_createlocation_gender"
+        android:id="@+id/btn_createlocation_addLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Choose"
