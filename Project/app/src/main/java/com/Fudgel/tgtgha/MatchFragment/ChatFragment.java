@@ -1,4 +1,4 @@
-package com.Fudgel.tgtgha;
+package com.Fudgel.tgtgha.MatchFragment;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.Fudgel.tgtgha.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,7 +18,6 @@ import android.view.ViewGroup;
  * to handle interaction events.
  * Use the {@link ChatFragment#newInstance} factory method to
  * create an instance of this fragment.
- *
  */
 public class ChatFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
@@ -29,6 +30,10 @@ public class ChatFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    public ChatFragment() {
+        // Required empty public constructor
+    }
 
     /**
      * Use this factory method to create a new instance of
@@ -46,9 +51,6 @@ public class ChatFragment extends Fragment {
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
-    }
-    public ChatFragment() {
-        // Required empty public constructor
     }
 
     @Override

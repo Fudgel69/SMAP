@@ -6,4 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".ChatActivity">
 
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutFragment"
+        android:layout_width="395dp"
+        android:layout_height="623dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="100dp">
+
+    </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
