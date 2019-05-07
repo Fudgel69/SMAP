@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.Fudgel.tgtgha"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -30,6 +30,16 @@ dependencies {
 
     //Database - Firebase
     implementation 'com.google.firebase:firebase-core:16.0.8'
+
+    //Authentication - Firebase
+    implementation 'com.google.firebase:firebase-auth:16.1.0'
+
+    //UI - Firebass
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
+    implementation 'com.firebaseui:firebase-ui-database:4.0.0'
+
+    //Facebook - Authentication
+    implementation 'com.facebook.android:facebook-android-sdk:4.0.0'
 
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
