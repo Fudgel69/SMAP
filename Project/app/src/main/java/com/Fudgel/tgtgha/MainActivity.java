@@ -21,16 +21,38 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button chatButton;
-
+    private Button chatButton;
     private static final int MY_REQUEST_CODE = 4004;
-    List<AuthUI.IdpConfig> providers;
+    private List<AuthUI.IdpConfig> providers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initProviders();
+        setID();
+        clickSetup();
+    }
+
+
+    private void setID() {
+        chatButton = findViewById(R.id.btn_chat);
+    }
+
+
+    private void clickSetup() {
+        chatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ChatActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+
+    private void initProviders() {
         //Init Providers:
         providers = Arrays.asList(
                 //new AuthUI.IdpConfig.EmailBuilder().build(),
@@ -38,17 +60,9 @@ public class MainActivity extends AppCompatActivity {
                 new AuthUI.IdpConfig.FacebookBuilder().build(),
                 new AuthUI.IdpConfig.GoogleBuilder().build()
         );
-showSignInOptions();
+        showSignInOptions();
+    }
 
-chatButton = findViewById(R.id.btn_chat);
-chatButton.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Intent intent = new Intent(MainActivity.this, ChatActivity.class);
-        startActivity(intent);
-    }
-});
-    }
 
     private void showSignInOptions() {
         startActivityForResult(
@@ -58,6 +72,7 @@ chatButton.setOnClickListener(new View.OnClickListener() {
                 .build(),MY_REQUEST_CODE
         );
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
