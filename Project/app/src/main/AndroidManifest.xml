@@ -3,6 +3,7 @@
     package="com.Fudgel.tgtgha">
 
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"> </uses-permission>
 
     <application
         android:allowBackup="true"

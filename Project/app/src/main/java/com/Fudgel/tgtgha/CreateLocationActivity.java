@@ -1,10 +1,13 @@
 package com.Fudgel.tgtgha;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,12 +17,14 @@ public class CreateLocationActivity extends AppCompatActivity {
     private TextView txt_addName;
     private Button btn_Gender;
     private Button btn_Location;
+    private ImageButton image_profile;
 
     private int checkedGender;
     private String[] Genders = {"Man", "Woman", "Other"};
 
     private int checkedLocation;
     private String[] Locations = {"Aarhus C", "Skejby", "Aarhus N", "Aarhus S", "Aarhus V", "Viby J"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +46,13 @@ public class CreateLocationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 displayLocationOptions();
+            }
+        });
+        image_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+                startActivity(intent);
             }
         });
     }
@@ -85,6 +97,7 @@ public class CreateLocationActivity extends AppCompatActivity {
         btn_Gender = findViewById(R.id.btn_createlocation_addGender);
         btn_Location = findViewById(R.id.btn_createlocation_addLocation);
 
+        image_profile = findViewById(R.id.img_createlocation_userImage);
         //set text to user current data
     }
 }
