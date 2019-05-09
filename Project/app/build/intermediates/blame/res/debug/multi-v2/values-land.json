@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< Updated upstream
             "outputFile": "C:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\9df2790605d9f5864dc6262646200e1e\\res\\values-land\\values-land.xml",
+=======
+            "outputFile": "C:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\simon\\.gradle\\caches\\transforms-2\\files-2.1\\acf1a63540ab02e768e95a6ac5aefd1d\\res\\values-land\\values-land.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +30,11 @@
                     }
                 },
                 {
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\4df46bff328cbbcfa0091f0fe9b47a40\\res\\values-land\\values-land.xml",
+=======
+                    "source": "C:\\Users\\simon\\.gradle\\caches\\transforms-2\\files-2.1\\66af7454c859d9e93ef01160fac8a7c4\\res\\values-land\\values-land.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
