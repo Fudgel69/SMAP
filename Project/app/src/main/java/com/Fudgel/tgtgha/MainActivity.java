@@ -21,6 +21,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button locButton;
     private Button chatButton;
     private static final int MY_REQUEST_CODE = 4004;
     private List<AuthUI.IdpConfig> providers;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setID() {
         chatButton = findViewById(R.id.btn_chat);
+        locButton = findViewById(R.id.btn_Location);
     }
 
 
@@ -46,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ChatActivity.class);
+                startActivity(intent);
+            }
+        });
+        locButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CreateLocationActivity.class);
                 startActivity(intent);
             }
         });
