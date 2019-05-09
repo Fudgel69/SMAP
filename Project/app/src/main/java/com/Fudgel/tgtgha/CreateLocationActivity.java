@@ -32,7 +32,6 @@ public class CreateLocationActivity extends AppCompatActivity {
 
         SetupView();
         SetupClick();
-
     }
 
     private void SetupClick() {
