@@ -1,13 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.facebook.android:facebook-places:5.0.0@aar">
     <CLASSES>
-<<<<<<< Updated upstream
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/69a9165dd5c7943e9c01d70221deb3d8/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/69a9165dd5c7943e9c01d70221deb3d8/jars/classes.jar!/" />
-=======
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/855376efcbab8f0465bcbf6285731c66/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/855376efcbab8f0465bcbf6285731c66/jars/classes.jar!/" />
->>>>>>> Stashed changes
     </CLASSES>
     <JAVADOC />
     <SOURCES>

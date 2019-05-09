@@ -1286,6 +1286,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnChat
 id btnMap
+id btn_Location
 id btn_chat
 id btn_createlocation_addGender
 id btn_createlocation_addLocation
@@ -1376,6 +1377,7 @@ id ghost_view
 id gone
 id group_divider
 id groups
+id guideline
 id header
 id header_text
 id heading
