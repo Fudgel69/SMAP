@@ -3,6 +3,7 @@ package com.Fudgel.tgtgha;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,8 +16,11 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -120,16 +124,10 @@ public class CreateLocationActivity extends AppCompatActivity {
         String name = user.getDisplayName();
         txt_addName.setText(name);
         image_profile.setImageResource(R.drawable.ic_camera);
-
-        try{
-            URL newurl = new URL(user.getPhotoUrl().toString());
-            Bitmap mIcon_val = BitmapFactory.decodeStream(newurl.openConnection().getInputStream());
-            image_profile.setImageBitmap(mIcon_val);
-        }
-        catch (MalformedURLException e){} catch (IOException e) {
-            e.printStackTrace();
-        }
+        String newurl = user.getPhotoUrl().toString();
+        Picasso.get().load(newurl).into(image_profile);
 
 
     }
 }
+

@@ -171,6 +171,10 @@
             android:required="false" />
 
         <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.Fudgel.tgtgha.com.squareup.picasso"
+            android:exported="false" />
+        <provider
             android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
             android:authorities="com.Fudgel.tgtgha.lifecycle-trojan"
             android:exported="false"
