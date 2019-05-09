@@ -6,9 +6,11 @@
     tools:context=".MatchFragment.MapFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <fragment
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/fragmentMap"
         android:text="hello_blank_fragment" />
 
 </FrameLayout>

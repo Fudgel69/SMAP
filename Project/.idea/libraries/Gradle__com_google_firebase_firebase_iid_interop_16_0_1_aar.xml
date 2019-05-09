@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-iid-interop:16.0.1@aar">
     <CLASSES>
+<<<<<<< Updated upstream
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9082c8ac5bca8a7707631c6f7b5adc32/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9082c8ac5bca8a7707631c6f7b5adc32/jars/classes.jar!/" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e642e0af47dad302c32693d99f6de1a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e642e0af47dad302c32693d99f6de1a/jars/classes.jar!/" />
+>>>>>>> Stashed changes
     </CLASSES>
     <JAVADOC />
     <SOURCES />

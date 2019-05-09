@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "546399871668",
+    "firebase_url": "https://smap-fudget.firebaseio.com",
+    "project_id": "smap-fudget",
+    "storage_bucket": "smap-fudget.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546399871668:android:83009206b595c716",
+        "android_client_info": {
+          "package_name": "com.Fudgel.tgtgha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546399871668-hnh1p9slh0ihjtu9chavkv1q7t2fb6ut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Fudgel.tgtgha",
+            "certificate_hash": "574745acdb27ea20c6da157058dbf08a7e306f3a"
+          }
+        },
+        {
+          "client_id": "546399871668-f2uc10enjo8h0fhk252lfkknn0bebj26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCghHiUv0P4HMxrVyZfnjh9xCNcfyLBsR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546399871668-f2uc10enjo8h0fhk252lfkknn0bebj26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
