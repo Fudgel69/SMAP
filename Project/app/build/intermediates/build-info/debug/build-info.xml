@@ -6,22 +6,22 @@
     density="420dpi"
     format="10"
     plugin-version="3.4.0"
-    timestamp="1557399281966"
+    timestamp="1557409155428"
     token="-8387666466022416337"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="3472" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="502" />
     <task
         name="verifier"
-        duration="0" />
+        duration="33" />
 
     <artifact
         location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -65,7 +65,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1557399281966"
+        timestamp="1557409155428"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
