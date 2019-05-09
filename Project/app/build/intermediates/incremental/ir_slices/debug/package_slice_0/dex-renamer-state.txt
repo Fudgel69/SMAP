@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 #Thu May 09 16:01:33 CEST 2019
+=======
+#Thu May 09 15:39:39 CEST 2019
+base.0=C\:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+=======
+#Thu May 09 14:41:06 CEST 2019
+>>>>>>> master
 base.0=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

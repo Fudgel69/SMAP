@@ -28,8 +28,6 @@ public class AppService extends Service {
     public void onCreate() {
         super.onCreate();
 
-
-
     }
 
 
