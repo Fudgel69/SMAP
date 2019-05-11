@@ -1,13 +1,19 @@
 package com.Fudgel.tgtgha.MatchFragment;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
+import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -17,12 +23,16 @@ import com.Fudgel.tgtgha.R;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+
 
 
 public class MapFragment extends Fragment {
 
 
-
+    private Location myLocation = new Location("");
+    private FusedLocationProviderClient fusedLocationProviderClient;
 
     public MapFragment() {
         // Required empty public constructor
@@ -32,6 +42,8 @@ public class MapFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getContext());
+        getLocation();
     }
 
     @Override
@@ -44,12 +56,20 @@ public class MapFragment extends Fragment {
         mapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap mMap) {
+
+                LatLng latLng = new LatLng(myLocation.getLatitude(),myLocation.getLongitude());
+
                 mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
                 mMap.clear(); //clear old markers
 
+                if ( ContextCompat.checkSelfPermission( getContext(), android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
+                    requestPermissions(new String[]{ android.Manifest.permission.ACCESS_FINE_LOCATION},1 );
+                }
+                mMap.setMyLocationEnabled(true);
+
                 CameraPosition googlePlex = CameraPosition.builder()
-                        .target(new LatLng(37.4219999,-122.0862462))
+                        .target(new LatLng( 56.156635, 10.210365))
                         .zoom(10)
                         .bearing(0)
                         .tilt(45)
@@ -57,19 +77,28 @@ public class MapFragment extends Fragment {
 
                 mMap.animateCamera(CameraUpdateFactory.newCameraPosition(googlePlex), 10000, null);
 
-
-                mMap.addMarker(new MarkerOptions()
-                        .position(new LatLng(37.4629101,-122.2449094))
-                        .title("Iron Man")
-                        .snippet("His Talent : Plenty of money"));
-
-                mMap.addMarker(new MarkerOptions()
-                        .position(new LatLng(37.3092293,-122.1136845))
-                        .title("Captain America"));
             }
         });
 
 
         return rootView;
+    }
+
+    public void getLocation(){
+
+        if ( ContextCompat.checkSelfPermission( getContext(), android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
+            requestPermissions(new String[]{ android.Manifest.permission.ACCESS_FINE_LOCATION},1 );
+        }
+        Task<Location> task = fusedLocationProviderClient.getLastLocation();
+        task.addOnSuccessListener(new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                if (location != null) {
+                    myLocation = location;
+                }else{
+                }
+            }
+        });
+
     }
 }
