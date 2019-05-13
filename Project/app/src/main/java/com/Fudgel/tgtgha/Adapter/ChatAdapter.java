@@ -8,11 +8,14 @@ import android.widget.TextView;
 
 import com.Fudgel.tgtgha.Model.ChatModel;
 import com.Fudgel.tgtgha.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder> {
+
+    private String currUser = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
     static final class ChatViewHolder extends RecyclerView.ViewHolder {
 
@@ -53,5 +56,13 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
 
         holder.message.setText(data.getMessage());
         holder.name.setText(data.getName());
+
+        if (data.getID().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())){
+            holder.message.setHighlightColor(0xFF00FF00);
+            holder.message.setTextColor(0xFF00FF00);
+            holder.name.setTextColor(0xFF00FF00);
+            holder.name.setHighlightColor(0xFF00FF00);
+        }
+
     }
 }
