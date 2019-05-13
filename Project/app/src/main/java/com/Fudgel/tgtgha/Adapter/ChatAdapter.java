@@ -1,5 +1,6 @@
 package com.Fudgel.tgtgha.Adapter;
 
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,12 +22,14 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
 
         TextView name;
         TextView message;
+        CardView messageHolder;
 
         ChatViewHolder(View view) {
             super(view);
 
             name = view.findViewById(R.id.item_username);
             message = view.findViewById(R.id.item_message);
+            messageHolder = view.findViewById(R.id.card_view);
         }
     }
 
@@ -57,11 +60,11 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
         holder.message.setText(data.getMessage());
         holder.name.setText(data.getName());
 
-        if (data.getID().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())){
-            holder.message.setHighlightColor(0xFF00FF00);
-            holder.message.setTextColor(0xFF00FF00);
-            holder.name.setTextColor(0xFF00FF00);
-            holder.name.setHighlightColor(0xFF00FF00);
+        if (data.getID().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())){ ;
+            holder.name.setBackgroundColor(0xFF00FF00);
+            holder.message.setBackgroundColor(0xFF00FF00);
+            holder.messageHolder.setCardBackgroundColor(0xFF00FF00);
+
         }
 
     }
