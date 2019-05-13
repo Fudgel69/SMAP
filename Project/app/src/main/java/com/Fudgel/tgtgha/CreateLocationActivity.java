@@ -188,7 +188,7 @@ public class CreateLocationActivity extends AppCompatActivity {
         Resources res = getApplicationContext().getResources();
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext());
         builder.setContentIntent(contentIntent)
-                .setSmallIcon(R.drawable.ic_launcher_background)
+                .setSmallIcon(R.mipmap.ic_new_launcher)
                 .setContentTitle("Message")
                 .setContentText("Try this out")
                 .setChannelId("myChannel");

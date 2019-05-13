@@ -1686,7 +1686,10 @@ int layout select_dialog_multichoice_material 0x7f0b0069
 int layout select_dialog_singlechoice_material 0x7f0b006a
 int layout support_simple_spinner_dropdown_item 0x7f0b006b
 int mipmap ic_launcher 0x7f0c0000
-int mipmap ic_launcher_round 0x7f0c0001
+int mipmap ic_launcher_foreground 0x7f0c0001
+int mipmap ic_launcher_round 0x7f0c0002
+int mipmap ic_new_launcher 0x7f0c0003
+int mipmap ic_new_launcher_round 0x7f0c0004
 int plurals fui_error_weak_password 0x7f0d0000
 int string abc_action_bar_home_description 0x7f0e0000
 int string abc_action_bar_up_description 0x7f0e0001

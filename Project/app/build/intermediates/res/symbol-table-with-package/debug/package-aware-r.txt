@@ -1687,7 +1687,10 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+mipmap ic_new_launcher
+mipmap ic_new_launcher_round
 plurals fui_error_weak_password
 string abc_action_bar_home_description
 string abc_action_bar_up_description
