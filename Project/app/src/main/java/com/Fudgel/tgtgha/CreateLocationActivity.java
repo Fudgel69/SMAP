@@ -27,8 +27,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.Fudgel.tgtgha.Database.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 public class CreateLocationActivity extends AppCompatActivity {
@@ -39,11 +42,17 @@ public class CreateLocationActivity extends AppCompatActivity {
     private Button btn_Location;
     private Button btn_Search;
     private ImageButton image_profile;
+    private User user;
 
+    private String userName;
+    private String userImageUrl;
     private int checkedGender;
     private String[] Genders = {"Male", "Female", "Other"};
     private int checkedLocation;
     private String[] Locations = {"Aarhus C", "Skejby", "Aarhus N", "Aarhus S", "Aarhus V", "Viby J"};
+
+    private DatabaseReference databaseRef;
+    private FirebaseDatabase databaseUser;
 
     private static final int CAMERA_PIC_REQUEST = 1888;
     private static final int MY_CAMERA_PERMISSION_CODE = 100;
@@ -54,6 +63,9 @@ public class CreateLocationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_location);
+
+        userName = new String();
+        userImageUrl = new String();
 
         SetupView();
         SetupClick();
@@ -91,7 +103,6 @@ public class CreateLocationActivity extends AppCompatActivity {
             }
         });
     }
-
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == CAMERA_PIC_REQUEST && resultCode == Activity.RESULT_OK) {
             Bitmap image = (Bitmap) data.getExtras().get("data");
@@ -140,17 +151,32 @@ public class CreateLocationActivity extends AppCompatActivity {
         btn_Location = findViewById(R.id.btn_createlocation_addLocation);
         btn_Search = findViewById(R.id.btn_createlocation_search);
 
+        btn_Search = findViewById(R.id.btn_createlocation_search);
+
         image_profile = findViewById(R.id.img_createlocation_userImage);
+
+
         //set text to user current data
-
-
-        user = FirebaseAuth.getInstance().getCurrentUser();
-        String name = user.getDisplayName();
-        txt_addName.setText(name);
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        userName = user.getDisplayName();
+        txt_addName.setText(userName);
         image_profile.setImageResource(R.drawable.ic_camera);
-        String newurl = user.getPhotoUrl().toString();
-        Picasso.get().load(newurl).into(image_profile);
+        userImageUrl = user.getPhotoUrl().toString();
+        Picasso.get().load(userImageUrl).into(image_profile);
 
+        saveUserToDatabase();
+
+
+    }
+
+
+    private void saveUserToDatabase(){
+
+        user = new User("1",userName,"34",userImageUrl,"male");
+        databaseUser = FirebaseDatabase.getInstance();
+        databaseRef = databaseUser.getReference("users");
+
+        databaseRef.setValue(user);
 
     }
 

@@ -1,9 +1,14 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #Mon May 13 14:52:38 CEST 2019
 base.0=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
 =======
 #Mon May 13 14:19:28 CEST 2019
 base.0=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+>>>>>>> Stashed changes
+=======
+#Mon May 13 14:49:00 CEST 2019
+base.0=C\:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
 >>>>>>> Stashed changes
 path.0=classes.dex
 renamed.0=classes.dex
