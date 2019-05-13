@@ -1294,8 +1294,9 @@ id btn_createlocation_addLocation
 id btn_createlocation_search
 id btn_holder
 id btn_logout
+id btn_matchin_accept
+id btn_matching_deny
 id button
-id button2
 id buttonPanel
 id button_continue
 id button_create
@@ -1393,6 +1394,7 @@ id icon_only
 id ifRoom
 id image
 id img_createlocation_userImage
+id img_matching_picture
 id info
 id inline
 id invisible
