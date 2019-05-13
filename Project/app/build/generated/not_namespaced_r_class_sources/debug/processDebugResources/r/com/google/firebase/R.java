@@ -89,6 +89,7 @@ public final class R {
         public static final int actions = 0x7f080018;
         public static final int async = 0x7f080021;
         public static final int blocking = 0x7f080026;
+<<<<<<< Updated upstream
         public static final int cancel_action = 0x7f080041;
         public static final int chronometer = 0x7f080048;
         public static final int end_padder = 0x7f080079;
@@ -111,6 +112,30 @@ public final class R {
         public static final int text2 = 0x7f080111;
         public static final int time = 0x7f08011a;
         public static final int title = 0x7f08011b;
+=======
+        public static final int cancel_action = 0x7f08003f;
+        public static final int chronometer = 0x7f080049;
+        public static final int end_padder = 0x7f08007a;
+        public static final int forever = 0x7f080085;
+        public static final int icon = 0x7f080095;
+        public static final int icon_group = 0x7f080096;
+        public static final int info = 0x7f08009b;
+        public static final int italic = 0x7f08009f;
+        public static final int line1 = 0x7f0800a9;
+        public static final int line3 = 0x7f0800aa;
+        public static final int media_actions = 0x7f0800b0;
+        public static final int normal = 0x7f0800be;
+        public static final int notification_background = 0x7f0800bf;
+        public static final int notification_main_column = 0x7f0800c0;
+        public static final int notification_main_column_container = 0x7f0800c1;
+        public static final int right_icon = 0x7f0800d8;
+        public static final int right_side = 0x7f0800d9;
+        public static final int status_bar_latest_event_content = 0x7f080108;
+        public static final int text = 0x7f080111;
+        public static final int text2 = 0x7f080112;
+        public static final int time = 0x7f08011b;
+        public static final int title = 0x7f08011c;
+>>>>>>> Stashed changes
     }
     public static final class integer {
         private integer() {}

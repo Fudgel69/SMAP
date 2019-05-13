@@ -1,5 +1,9 @@
 #Internal package file, do not edit.
+<<<<<<< Updated upstream
 #Mon May 13 14:52:40 CEST 2019
+=======
+#Mon May 13 14:19:30 CEST 2019
+>>>>>>> Stashed changes
 4.path=classes.dex
 8.set=DEX
 6.path=classes.dex
@@ -8,30 +12,47 @@
 5.baseType=DIRECTORY
 1.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\20
 8.path=classes.dex
+<<<<<<< Updated upstream
 3.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\merged_assets\\debug\\out
 4.set=DEX
 5.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
 7.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 11.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
 9.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
+=======
+3.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+4.set=DEX
+5.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+7.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\21
+11.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
+9.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+>>>>>>> Stashed changes
 1.baseType=DIRECTORY
 11.set=DEX
 0.set=DEX
 6.baseType=DIRECTORY
 7.set=DEX
-3.set=ASSET
+3.set=DEX
 2.baseType=DIRECTORY
 10.baseType=DIRECTORY
 1.path=classes.dex
 7.baseType=DIRECTORY
+<<<<<<< Updated upstream
 3.path=crashlytics-build.properties
 10.set=DEX
 5.path=classes.dex
 0.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\21
+=======
+3.path=classes.dex
+10.set=DEX
+5.path=classes.dex
+0.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\merged_assets\\debug\\out
+>>>>>>> Stashed changes
 7.path=classes.dex
 11.path=classes.dex
 9.path=classes.dex
 6.set=DEX
+<<<<<<< Updated upstream
 2.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 11.baseType=DIRECTORY
 4.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
@@ -39,6 +60,15 @@
 6.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 10.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
 8.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+=======
+2.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
+11.baseType=DIRECTORY
+4.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
+3.baseType=DIRECTORY
+6.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+10.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\20
+8.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+>>>>>>> Stashed changes
 2.set=DEX
 8.baseType=DIRECTORY
 9.set=DEX

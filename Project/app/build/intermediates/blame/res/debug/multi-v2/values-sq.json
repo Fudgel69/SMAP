@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< Updated upstream
             "outputFile": "C:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
             "map": [
                 {
@@ -39,6 +40,12 @@
                 },
                 {
                     "source": "C:\\Users\\simon\\.gradle\\caches\\transforms-2\\files-2.1\\fd058002eedb6b16f16a20bd0e170a16\\res\\values-sq\\values-sq.xml",
+=======
+            "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\6a6e6f7acbc3f962e20d2b7d72518898\\res\\values-sq\\values-sq.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -55,7 +62,11 @@
                     }
                 },
                 {
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\simon\\.gradle\\caches\\transforms-2\\files-2.1\\056b8fb7b1e3e56c8977f0a938003369\\res\\values-sq\\values.xml",
+=======
+                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\aecf4c93667d80927e0f9a31fee316b6\\res\\values-sq\\values.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

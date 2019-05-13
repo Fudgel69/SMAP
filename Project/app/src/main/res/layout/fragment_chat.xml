@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MatchFragment.ChatFragment">
+    tools:context=".Fragment.ChatFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_message"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fragmentChat"
-        android:text="hello_blank_fragment" />
+        android:layout_above="@+id/chat_input"
+        android:background="@android:color/darker_gray"
+        android:paddingBottom="20dp" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/chat_input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:hint="Enter message: "
+        android:imeOptions="actionSend"
+        android:inputType="text" />
+
+</RelativeLayout>

@@ -725,6 +725,7 @@ public final class R {
         public static final int blocking = 0x7f080026;
         public static final int bottom = 0x7f080027;
         public static final int box_count = 0x7f080028;
+<<<<<<< Updated upstream
         public static final int button = 0x7f080039;
         public static final int buttonPanel = 0x7f08003a;
         public static final int cancel_action = 0x7f080041;
@@ -754,10 +755,42 @@ public final class R {
         public static final int expand_activities_button = 0x7f08007d;
         public static final int expanded_menu = 0x7f08007e;
         public static final int forever = 0x7f080084;
+=======
+        public static final int button = 0x7f080037;
+        public static final int buttonPanel = 0x7f080038;
+        public static final int cancel_action = 0x7f08003f;
+        public static final int cancel_button = 0x7f080040;
+        public static final int center = 0x7f080042;
+        public static final int checkbox = 0x7f080048;
+        public static final int chronometer = 0x7f080049;
+        public static final int com_facebook_body_frame = 0x7f08004e;
+        public static final int com_facebook_button_xout = 0x7f08004f;
+        public static final int com_facebook_device_auth_instructions = 0x7f080050;
+        public static final int com_facebook_fragment_container = 0x7f080051;
+        public static final int com_facebook_login_fragment_progress_bar = 0x7f080052;
+        public static final int com_facebook_smart_instructions_0 = 0x7f080053;
+        public static final int com_facebook_smart_instructions_or = 0x7f080054;
+        public static final int com_facebook_tooltip_bubble_view_bottom_pointer = 0x7f080055;
+        public static final int com_facebook_tooltip_bubble_view_text_body = 0x7f080056;
+        public static final int com_facebook_tooltip_bubble_view_top_pointer = 0x7f080057;
+        public static final int confirmation_code = 0x7f080058;
+        public static final int contentPanel = 0x7f08005c;
+        public static final int custom = 0x7f080060;
+        public static final int customPanel = 0x7f080061;
+        public static final int decor_content_parent = 0x7f080063;
+        public static final int default_activity_button = 0x7f080064;
+        public static final int display_always = 0x7f08006d;
+        public static final int edit_query = 0x7f080070;
+        public static final int end_padder = 0x7f08007a;
+        public static final int expand_activities_button = 0x7f08007e;
+        public static final int expanded_menu = 0x7f08007f;
+        public static final int forever = 0x7f080085;
+>>>>>>> Stashed changes
         public static final int home = 0x7f080091;
         public static final int icon = 0x7f080095;
         public static final int icon_group = 0x7f080096;
         public static final int image = 0x7f080099;
+<<<<<<< Updated upstream
         public static final int info = 0x7f08009c;
         public static final int inline = 0x7f08009d;
         public static final int italic = 0x7f0800a0;
@@ -829,6 +862,79 @@ public final class R {
         public static final int unknown = 0x7f080130;
         public static final int up = 0x7f080132;
         public static final int wrap_content = 0x7f08013d;
+=======
+        public static final int info = 0x7f08009b;
+        public static final int inline = 0x7f08009c;
+        public static final int italic = 0x7f08009f;
+        public static final int large = 0x7f0800a4;
+        public static final int left = 0x7f0800a7;
+        public static final int line1 = 0x7f0800a9;
+        public static final int line3 = 0x7f0800aa;
+        public static final int listMode = 0x7f0800ab;
+        public static final int list_item = 0x7f0800ac;
+        public static final int media_actions = 0x7f0800b0;
+        public static final int message = 0x7f0800b1;
+        public static final int messenger_send_button = 0x7f0800b2;
+        public static final int multiply = 0x7f0800b7;
+        public static final int never_display = 0x7f0800bc;
+        public static final int none = 0x7f0800bd;
+        public static final int normal = 0x7f0800be;
+        public static final int notification_background = 0x7f0800bf;
+        public static final int notification_main_column = 0x7f0800c0;
+        public static final int notification_main_column_container = 0x7f0800c1;
+        public static final int open_graph = 0x7f0800c2;
+        public static final int page = 0x7f0800c5;
+        public static final int parentPanel = 0x7f0800c8;
+        public static final int progress_bar = 0x7f0800d1;
+        public static final int progress_circular = 0x7f0800d2;
+        public static final int progress_horizontal = 0x7f0800d3;
+        public static final int radio = 0x7f0800d4;
+        public static final int right = 0x7f0800d7;
+        public static final int right_icon = 0x7f0800d8;
+        public static final int right_side = 0x7f0800d9;
+        public static final int screen = 0x7f0800df;
+        public static final int scrollIndicatorDown = 0x7f0800e1;
+        public static final int scrollIndicatorUp = 0x7f0800e2;
+        public static final int scrollView = 0x7f0800e3;
+        public static final int search_badge = 0x7f0800e5;
+        public static final int search_bar = 0x7f0800e6;
+        public static final int search_button = 0x7f0800e7;
+        public static final int search_close_btn = 0x7f0800e8;
+        public static final int search_edit_frame = 0x7f0800e9;
+        public static final int search_go_btn = 0x7f0800ea;
+        public static final int search_mag_icon = 0x7f0800eb;
+        public static final int search_plate = 0x7f0800ec;
+        public static final int search_src_text = 0x7f0800ed;
+        public static final int search_voice_btn = 0x7f0800ee;
+        public static final int select_dialog_listview = 0x7f0800ef;
+        public static final int shortcut = 0x7f0800f3;
+        public static final int small = 0x7f0800f9;
+        public static final int spacer = 0x7f0800ff;
+        public static final int split_action_bar = 0x7f080100;
+        public static final int src_atop = 0x7f080103;
+        public static final int src_in = 0x7f080104;
+        public static final int src_over = 0x7f080105;
+        public static final int standard = 0x7f080106;
+        public static final int status_bar_latest_event_content = 0x7f080108;
+        public static final int submenuarrow = 0x7f08010a;
+        public static final int submit_area = 0x7f08010b;
+        public static final int tabMode = 0x7f08010c;
+        public static final int tag_transition_group = 0x7f08010d;
+        public static final int text = 0x7f080111;
+        public static final int text2 = 0x7f080112;
+        public static final int textSpacerNoButtons = 0x7f080113;
+        public static final int textSpacerNoTitle = 0x7f080114;
+        public static final int time = 0x7f08011b;
+        public static final int title = 0x7f08011c;
+        public static final int titleDividerNoCustom = 0x7f08011d;
+        public static final int title_template = 0x7f08011e;
+        public static final int top = 0x7f08011f;
+        public static final int topPanel = 0x7f080120;
+        public static final int uniform = 0x7f080130;
+        public static final int unknown = 0x7f080131;
+        public static final int up = 0x7f080133;
+        public static final int wrap_content = 0x7f08013e;
+>>>>>>> Stashed changes
     }
     public static final class integer {
         private integer() {}
@@ -868,11 +974,19 @@ public final class R {
         public static final int abc_search_dropdown_item_icons_2line = 0x7f0b0018;
         public static final int abc_search_view = 0x7f0b0019;
         public static final int abc_select_dialog_material = 0x7f0b001a;
+<<<<<<< Updated upstream
         public static final int com_facebook_activity_layout = 0x7f0b0025;
         public static final int com_facebook_device_auth_dialog_fragment = 0x7f0b0026;
         public static final int com_facebook_login_fragment = 0x7f0b0027;
         public static final int com_facebook_smart_device_dialog_fragment = 0x7f0b0028;
         public static final int com_facebook_tooltip_bubble = 0x7f0b0029;
+=======
+        public static final int com_facebook_activity_layout = 0x7f0b0024;
+        public static final int com_facebook_device_auth_dialog_fragment = 0x7f0b0025;
+        public static final int com_facebook_login_fragment = 0x7f0b0026;
+        public static final int com_facebook_smart_device_dialog_fragment = 0x7f0b0027;
+        public static final int com_facebook_tooltip_bubble = 0x7f0b0028;
+>>>>>>> Stashed changes
         public static final int messenger_button_send_blue_large = 0x7f0b0051;
         public static final int messenger_button_send_blue_round = 0x7f0b0052;
         public static final int messenger_button_send_blue_small = 0x7f0b0053;
