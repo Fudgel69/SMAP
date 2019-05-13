@@ -100,11 +100,11 @@ INJECTED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidM
 	xmlns:android
 		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:6:5-65
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:5:5-65
 	android:name
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:6:22-62
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:5:22-62
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:7:5-67
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:6:5-67
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.2] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\7d08d72a712c6001c04d3915f7d3ad5f\AndroidManifest.xml:13:5-67
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.2] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\7d08d72a712c6001c04d3915f7d3ad5f\AndroidManifest.xml:13:5-67
 MERGED from [com.firebaseui:firebase-ui-database:4.3.2] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\07c158fd7d731e62afbb4d9c5413df5a\AndroidManifest.xml:11:5-67
@@ -124,13 +124,21 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\8e7d397f54af9c19c1fc05196edcd05a\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\8e7d397f54af9c19c1fc05196edcd05a\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:7:22-64
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:8:5-79
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:7:22-76
+uses-feature#0x00020000
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:9:5-11:35
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\c8bef41e997477e7a74a940a6d5461ee\AndroidManifest.xml:26:5-28:35
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\c8bef41e997477e7a74a940a6d5461ee\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:10:9-41
+	android:required
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:11:9-32
 application
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:10:5-34:19
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:13:5-38:19
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.2] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\7d08d72a712c6001c04d3915f7d3ad5f\AndroidManifest.xml:15:5-107:19
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.2] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\7d08d72a712c6001c04d3915f7d3ad5f\AndroidManifest.xml:15:5-107:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\acf1a63540ab02e768e95a6ac5aefd1d\AndroidManifest.xml:22:5-20
@@ -214,65 +222,61 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\simon\.gra
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\fd058002eedb6b16f16a20bd0e170a16\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:16:9-41
 	android:roundIcon
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:17:9-54
 	android:icon
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:19:9-40
+activity#com.Fudgel.tgtgha.MatchingActivity
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:20:9-63
+	android:name
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:20:19-51
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:18:9-20:70
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:22:9-24:71
 	android:value
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:20:13-68
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:24:13-68
 	android:name
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:19:13-58
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:23:13-58
 activity#com.Fudgel.tgtgha.LocationActivity
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:22:9-63
-	android:name
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:22:19-51
-activity#com.Fudgel.tgtgha.ChatActivity
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:23:9-50
-	android:name
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:23:19-47
-activity#com.Fudgel.tgtgha.RequestActivity
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:24:9-53
-	android:name
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:24:19-50
-activity#com.Fudgel.tgtgha.CreateLocationActivity
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:25:9-60
-	android:name
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:25:19-57
-activity#com.Fudgel.tgtgha.EditUserActivity
 ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:26:9-54
 	android:name
 		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:26:19-51
-activity#com.Fudgel.tgtgha.MainActivity
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:27:9-33:20
+activity#com.Fudgel.tgtgha.ChatActivity
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:27:9-50
 	android:name
 		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:27:19-47
+activity#com.Fudgel.tgtgha.RequestActivity
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:28:9-53
+	android:name
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:28:19-50
+activity#com.Fudgel.tgtgha.CreateLocationActivity
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:29:9-60
+	android:name
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:29:19-57
+activity#com.Fudgel.tgtgha.EditUserActivity
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:30:9-54
+	android:name
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:30:19-51
+activity#com.Fudgel.tgtgha.MainActivity
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:31:9-37:20
+	android:name
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:31:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:31:27-74
-uses-feature#0x00020000
-ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:36:5-38:34
-MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\c8bef41e997477e7a74a940a6d5461ee\AndroidManifest.xml:26:5-28:35
-MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\c8bef41e997477e7a74a940a6d5461ee\AndroidManifest.xml:26:5-28:35
-	android:glEsVersion
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:37:9-41
-	android:required
-		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:38:9-32
+		ADDED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml:35:27-74
 uses-sdk
 INJECTED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\simon\Documents\GitHub\SMAP\Project\app\src\main\AndroidManifest.xml

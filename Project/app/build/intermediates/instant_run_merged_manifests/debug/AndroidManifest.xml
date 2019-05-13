@@ -31,6 +31,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.Fudgel.tgtgha.MatchingActivity" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCghHiUv0P4HMxrVyZfnjh9xCNcfyLBsR0" />

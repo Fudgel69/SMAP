@@ -1295,6 +1295,7 @@ id btn_createlocation_search
 id btn_holder
 id btn_logout
 id button
+id button2
 id buttonPanel
 id button_continue
 id button_create
@@ -1608,6 +1609,7 @@ layout activity_create_location
 layout activity_edit_user
 layout activity_location
 layout activity_main
+layout activity_matching
 layout activity_request
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

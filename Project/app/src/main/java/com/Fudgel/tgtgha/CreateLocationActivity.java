@@ -2,21 +2,28 @@ package com.Fudgel.tgtgha;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TaskStackBuilder;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,18 +31,13 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.squareup.picasso.Picasso;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-
 public class CreateLocationActivity extends AppCompatActivity {
 
     private TextView txt_addAge;
     private TextView txt_addName;
     private Button btn_Gender;
     private Button btn_Location;
+    private Button btn_Search;
     private ImageButton image_profile;
 
     private int checkedGender;
@@ -45,6 +47,8 @@ public class CreateLocationActivity extends AppCompatActivity {
 
     private static final int CAMERA_PIC_REQUEST = 1888;
     private static final int MY_CAMERA_PERMISSION_CODE = 100;
+
+    FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +82,12 @@ public class CreateLocationActivity extends AppCompatActivity {
                     Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivityForResult(cameraIntent, CAMERA_PIC_REQUEST);
                 }
+            }
+        });
+        btn_Search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendLargeSizeNotification();
             }
         });
     }
@@ -128,11 +138,13 @@ public class CreateLocationActivity extends AppCompatActivity {
 
         btn_Gender = findViewById(R.id.btn_createlocation_addGender);
         btn_Location = findViewById(R.id.btn_createlocation_addLocation);
+        btn_Search = findViewById(R.id.btn_createlocation_search);
 
         image_profile = findViewById(R.id.img_createlocation_userImage);
         //set text to user current data
 
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        user = FirebaseAuth.getInstance().getCurrentUser();
         String name = user.getDisplayName();
         txt_addName.setText(name);
         image_profile.setImageResource(R.drawable.ic_camera);
@@ -145,7 +157,7 @@ public class CreateLocationActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == MY_CAMERA_PERMISSION_CODE ) {
+        if (requestCode == MY_CAMERA_PERMISSION_CODE) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 Toast.makeText(this, "camera permission granted", Toast.LENGTH_LONG).show();
                 Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
@@ -154,6 +166,36 @@ public class CreateLocationActivity extends AppCompatActivity {
                 Toast.makeText(this, "camera permission denied", Toast.LENGTH_LONG).show();
             }
         }
+    }
+
+    private void sendLargeSizeNotification() {
+        // Sets an ID for the notification
+        Toast.makeText(this, "Lets go", Toast.LENGTH_LONG).show();
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            NotificationChannel mChannel = new NotificationChannel("myChannel", "Visible myChannel", NotificationManager.IMPORTANCE_LOW);
+            NotificationManager mNotificationManager =
+                    (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            mNotificationManager.createNotificationChannel(mChannel);
+        }
+        Intent notificationIntent = new Intent(getApplicationContext(), MatchingActivity.class);
+        PendingIntent contentIntent = PendingIntent.getActivity(getApplicationContext(),
+                0, notificationIntent,
+                PendingIntent.FLAG_CANCEL_CURRENT);
+
+        NotificationManager nm = (NotificationManager) getApplicationContext()
+                .getSystemService(Context.NOTIFICATION_SERVICE);
+
+        Resources res = getApplicationContext().getResources();
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext());
+        builder.setContentIntent(contentIntent)
+                .setSmallIcon(R.drawable.ic_launcher_background)
+                .setContentTitle("Message")
+                .setContentText("Try this out")
+                .setChannelId("myChannel");
+        Notification n = builder.getNotification();
+
+        n.defaults |= Notification.DEFAULT_ALL;
+        nm.notify(0, n);
     }
 }
 
