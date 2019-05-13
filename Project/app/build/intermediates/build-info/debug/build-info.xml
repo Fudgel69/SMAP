@@ -7,7 +7,7 @@
     format="10"
 <<<<<<< Updated upstream
     plugin-version="3.4.0"
-    timestamp="1557751952227"
+    timestamp="1557752849996"
     token="1353075982122905196"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -34,8 +34,14 @@
         duration="84" />
     <task
         name="verifier"
-        duration="32" />
+        duration="6" />
 
+    <artifact
+        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
     <artifact
         location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
         type="SPLIT" />
@@ -43,31 +49,25 @@
         location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
         location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -78,8 +78,14 @@
 
     <build
         build-mode="FULL"
-        timestamp="1557751952227"
+        timestamp="1557752849996"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
         <artifact
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
@@ -87,16 +93,10 @@
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -147,10 +147,10 @@
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_9.apk"

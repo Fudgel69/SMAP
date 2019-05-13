@@ -146,7 +146,8 @@ public class CreateLocationActivity extends AppCompatActivity {
 
         user = FirebaseAuth.getInstance().getCurrentUser();
         String name = user.getDisplayName();
-        txt_addName.setText(name);
+        String [] names = name.split(" ");
+        txt_addName.setText(names[0]);
         image_profile.setImageResource(R.drawable.ic_camera);
         String newurl = user.getPhotoUrl().toString();
         Picasso.get().load(newurl).into(image_profile);
