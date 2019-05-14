@@ -180,11 +180,14 @@ public class CreateLocationActivity extends AppCompatActivity {
         image_profile = findViewById(R.id.img_createlocation_userImage);
 
 
-        //set text to user current data
-        FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-        userName = firebaseUser.getDisplayName();
+        String name = user.getDisplayName();
+        String [] names = name.split(" ");
+        txt_addName.setText(names[0]);
+        user = FirebaseAuth.getInstance().getCurrentUser();
         userID = firebaseUser.getUid();
+        userName = firebaseUser.getDisplayName();
         txt_addName.setText(userName);
+        FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         image_profile.setImageResource(R.drawable.ic_camera);
         userImageUrl = firebaseUser.getPhotoUrl().toString();
         Picasso.get().load(userImageUrl).into(image_profile);
