@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< Updated upstream
-            "outputFile": "C:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\simon\\.gradle\\caches\\transforms-2\\files-2.1\\66af7454c859d9e93ef01160fac8a7c4\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,193,263,337,413,472,543",
-                        "endColumns": "68,68,69,73,75,58,70,67",
-                        "endOffsets": "119,188,258,332,408,467,538,606"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\simon\\.gradle\\caches\\transforms-2\\files-2.1\\acf1a63540ab02e768e95a6ac5aefd1d\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-=======
-            "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\2d4a9213dd86d3c0c639a372bc34549e\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
->>>>>>> Stashed changes
+                    "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\9df2790605d9f5864dc6262646200e1e\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -38,11 +21,9 @@
                         "endColumns": "59,69,70,71,57,57,10,63,62,10",
                         "endOffsets": "666,736,807,879,937,995,1104,1168,1231,1403"
                     }
-<<<<<<< Updated upstream
-=======
                 },
                 {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\3f31da6b7e6c458d307d427d4a2e1233\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\4df46bff328cbbcfa0091f0fe9b47a40\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -50,7 +31,6 @@
                         "endColumns": "68,68,69,73,75,58,70,67",
                         "endOffsets": "119,188,258,332,408,467,538,606"
                     }
->>>>>>> Stashed changes
                 }
             ]
         }

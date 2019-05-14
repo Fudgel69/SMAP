@@ -1,5 +1,6 @@
 package com.Fudgel.tgtgha.Adapter;
 
+import android.graphics.Color;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -61,9 +62,9 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
         holder.name.setText(data.getName());
 
         if (data.getID().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())){ ;
-            holder.name.setBackgroundColor(0xFF00FF00);
-            holder.message.setBackgroundColor(0xFF00FF00);
-            holder.messageHolder.setCardBackgroundColor(0xFF00FF00);
+            holder.name.setBackgroundColor(Color.GREEN);
+            holder.message.setBackgroundColor(Color.GREEN);
+            holder.messageHolder.setCardBackgroundColor(Color.GREEN);
 
         }
 
