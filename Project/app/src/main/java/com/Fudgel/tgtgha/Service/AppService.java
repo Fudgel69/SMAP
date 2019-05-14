@@ -9,6 +9,7 @@ import android.os.AsyncTask;
 import android.os.IBinder;
 import android.os.Binder;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
@@ -24,7 +25,7 @@ public class AppService extends Service {
     private LocationManager locationManager;
     private LocationListener locationListener;
 
-    private IBinder binder = new AppBinder();
+    private final IBinder binder = new AppBinder();
 
     //create binder
     public class AppBinder extends Binder {
@@ -36,6 +37,7 @@ public class AppService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
+        Log.i("SERVICE", "Service created");
         new BackgroundTask().execute();
 
     }
@@ -81,6 +83,7 @@ public class AppService extends Service {
         locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
+                Log.i("SERVICE", "Logging location...");
                 FirebaseDatabase.getInstance().getReference("Users/" + FirebaseAuth.getInstance().getCurrentUser().getUid()).child("location").setValue(location);
             }
         };
