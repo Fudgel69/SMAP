@@ -71,7 +71,6 @@ public class CreateLocationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_location);
 
-        SetupDatabase();
         SetupView();
         SetupClick();
     }
@@ -80,7 +79,7 @@ public class CreateLocationActivity extends AppCompatActivity {
     private void SetupDatabase() {
 
         databaseUser = FirebaseDatabase.getInstance();
-        databaseRef = databaseUser.getReference("users");
+        databaseRef = databaseUser.getReference("Users/" + userID);
 
         databaseRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -193,6 +192,7 @@ public class CreateLocationActivity extends AppCompatActivity {
         userImageUrl = firebaseUser.getPhotoUrl().toString();
         Picasso.get().load(userImageUrl).into(image_profile);
 
+        SetupDatabase();
         saveUserToDatabase();
 
     }
@@ -201,7 +201,6 @@ public class CreateLocationActivity extends AppCompatActivity {
 
     private void saveUserToDatabase(){
         user = new User();
-
 
 
         if(!databaseRef.child("userAge").equals(null)){
@@ -224,8 +223,6 @@ public class CreateLocationActivity extends AppCompatActivity {
         userAge = txt_addAge.getText().toString();
         userGender = btn_Gender.getText().toString();
 
-        databaseUser = FirebaseDatabase.getInstance();
-        databaseRef = databaseUser.getReference("users");
 
         user.setUserAge(userAge);
         user.setUserImageURL(userImageUrl);
