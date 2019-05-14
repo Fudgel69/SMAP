@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tl\\values-tl.xml",
             "map": [
                 {
@@ -22,6 +23,12 @@
                 },
                 {
                     "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\8a617e1946cc8da9187d7fcc29c56625\\res\\values-tl\\values.xml",
+=======
+            "outputFile": "C:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tl\\values-tl.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\43d05d59cba70d882f1b13a581e34da4\\res\\values-tl\\values.xml",
+>>>>>>> master
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,6 +45,7 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\aecf4c93667d80927e0f9a31fee316b6\\res\\values-tl\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -48,14 +56,26 @@
                     },
                     "to": {
                         "startLines": "60",
+=======
+                    "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\a3dc5181ff12f46d9f6049716c99c44a\\res\\values-tl\\values-tl.xml",
+                    "from": {
+                        "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "6942",
-                        "endColumns": "204",
-                        "endOffsets": "7142"
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "157",
+>>>>>>> master
+                        "startColumns": "4",
+                        "startOffsets": "17641",
+                        "endColumns": "100",
+                        "endOffsets": "17737"
                     }
                 },
                 {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\be6c8502096f650690717e11c8077741\\res\\values-tl\\values-tl.xml",
+                    "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\4e7032db272bfc05ab0c77dbf85ce2e9\\res\\values-tl\\values-tl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -72,24 +92,32 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\6a6e6f7acbc3f962e20d2b7d72518898\\res\\values-tl\\values-tl.xml",
+                    "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\8f7c7ce446d818fefbbe00b8407bc21f\\res\\values-tl\\values.xml",
                     "from": {
+<<<<<<< HEAD
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endColumns": "100",
                         "endOffsets": "151"
+=======
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "204",
+                        "endOffsets": "451"
+>>>>>>> master
                     },
                     "to": {
-                        "startLines": "157",
+                        "startLines": "60",
                         "startColumns": "4",
-                        "startOffsets": "17641",
-                        "endColumns": "100",
-                        "endOffsets": "17737"
+                        "startOffsets": "6942",
+                        "endColumns": "204",
+                        "endOffsets": "7142"
                     }
                 },
                 {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\71c883c555c34217560463e92989ec0a\\res\\values-tl\\values-tl.xml",
+                    "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\b55b74f46ff75f43c1a687a96fc119f9\\res\\values-tl\\values-tl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -104,6 +132,26 @@
                         "endColumns": "346,62,91,55,56,49,136,51,115,52,85,117,409,102,94,172,67,186,86,95,171,64,111,223,419,100,175,104,130,71,108,84,122,80,52,58,54,54,55,56,86,84,91,101,62,52,186,54,163,61,67,107,67,68,73,73,92,65,86,76,59,78,77,73,73,81,98,75,157,243,73,85,86,64,117,73,80,83,93,93,54,80,82,357,79,131,165",
                         "endOffsets": "447,8635,8727,8783,8840,8890,9027,9079,9195,9248,9334,9452,9862,9965,10060,10233,10301,10488,10575,10671,10843,10908,11020,11244,11664,11765,11941,12046,12177,12249,12358,12443,12566,12647,12700,12759,12814,12869,12925,12982,13069,13154,13246,13348,13411,13464,13651,13706,13870,13932,14000,14108,14176,14245,14319,14393,14486,14552,14639,14716,14776,14855,14933,15007,15081,15163,15262,15338,15496,15740,15814,15900,15987,16052,16170,16244,16325,16409,16503,16597,16652,16733,16816,17174,17254,17386,17552"
                     }
+<<<<<<< HEAD
+=======
+                },
+                {
+                    "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\4df46bff328cbbcfa0091f0fe9b47a40\\res\\values-tl\\values-tl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,224,332,449,537,643,764,843,921,1012,1105,1201,1295,1396,1489,1584,1678,1769,1860,1944,2053,2164,2265,2375,2492,2600,2763,2865",
+                        "endColumns": "118,107,116,87,105,120,78,77,90,92,95,93,100,92,94,93,90,90,83,108,110,100,109,116,107,162,101,83",
+                        "endOffsets": "219,327,444,532,638,759,838,916,1007,1100,1196,1290,1391,1484,1579,1673,1764,1855,1939,2048,2159,2260,2370,2487,2595,2758,2860,2944"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,156",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "452,571,679,796,884,990,1111,1190,1268,1359,1452,1548,1642,1743,1836,1931,2025,2116,2207,2291,2400,2511,2612,2722,2839,2947,3110,17557",
+                        "endColumns": "118,107,116,87,105,120,78,77,90,92,95,93,100,92,94,93,90,90,83,108,110,100,109,116,107,162,101,83",
+                        "endOffsets": "566,674,791,879,985,1106,1185,1263,1354,1447,1543,1637,1738,1831,1926,2020,2111,2202,2286,2395,2506,2607,2717,2834,2942,3105,3207,17636"
+                    }
+>>>>>>> master
                 }
             ]
         }
