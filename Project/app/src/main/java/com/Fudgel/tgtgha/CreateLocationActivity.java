@@ -215,6 +215,7 @@ public class CreateLocationActivity extends AppCompatActivity {
         databaseRef.child("id").setValue(userID);
         databaseRef.child("userName").setValue(user.getUserName());
         databaseRef.child("userImageURL").setValue(user.getUserImageURL());
+        databaseRef.child("location").setValue("");
         databaseRef.child("Chat").setValue("");
 
     }
