@@ -7,6 +7,7 @@ public class User {
     String userAge;
     String userImageURL;
     String userGender;
+    String chat;
 
     public User (){}
 
@@ -16,6 +17,7 @@ public class User {
         this.userAge = userAge;
         this.userImageURL = userImageURL;
         this.userGender = userGender;
+        this.chat = "";
     }
 
     public String getGUID() {
@@ -57,4 +59,8 @@ public class User {
     public void setUserGender(String userGender) {
         this.userGender = userGender;
     }
+
+    public String getChat() { return chat; }
+
+    public void setChat(String Chat) { this.chat = Chat; }
 }

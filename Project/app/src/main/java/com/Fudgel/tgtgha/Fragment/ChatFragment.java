@@ -36,10 +36,14 @@ public class ChatFragment extends Fragment {
     private EditText textMessage;
     private ChatAdapter chatAdapter;
 
-    FirebaseUser User;
+    FirebaseDatabase fDB;
+    FirebaseUser fbUser;
+    DatabaseReference dbUser;
+    DatabaseReference dbRefer;
 
     String Username;
     String UserID;
+    String chat;
 
     public ChatFragment() {
         // Required empty public constructor
@@ -50,10 +54,14 @@ public class ChatFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         setHasOptionsMenu(true);
+        fDB = FirebaseDatabase.getInstance();
+        fbUser = FirebaseAuth.getInstance().getCurrentUser();
 
-        User = FirebaseAuth.getInstance().getCurrentUser();
-        Username = User.getDisplayName();
-        UserID = User.getUid();
+        Username = fbUser.getDisplayName();
+        UserID = fbUser.getUid();
+
+        dbRefer = fDB.getReference();
+        dbUser = fDB.getReference("Users/" + UserID);
 
         setupConnection();
     }
@@ -74,7 +82,7 @@ public class ChatFragment extends Fragment {
                 data.setID(UserID);
                 data.setName(Username);
 
-                dbRef.child(String.valueOf(new Date().getTime())).setValue(data);
+                dbRefer.child("chats").child(chat).child(String.valueOf(new Date().getTime())).setValue(data);
 
                 clearEditText();
 
@@ -99,29 +107,30 @@ public class ChatFragment extends Fragment {
     }
 
     private void setupConnection() {
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        dbRef = database.getReference("chats/Chat1");
 
-        dbRef.addValueEventListener(new ValueEventListener() {
+        dbRefer.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Log.d("Chat","SUCCESS!");
-                handleReturn(dataSnapshot);
+                handleData(dataSnapshot);
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Log.e("Chat","ERROR: " + databaseError.getMessage());
                 Toast.makeText(getContext(), "Connection refused!", Toast.LENGTH_SHORT).show();
-                //mCallback.logout();
             }
         });
     }
 
-    private void handleReturn(DataSnapshot dataSnapshot) {
+    private void handleData(DataSnapshot dataSnapshot) {
         chatAdapter.clearMessages();
 
-        for(DataSnapshot item : dataSnapshot.getChildren()) {
+        chat = dataSnapshot.child("Users").child(UserID).child("Chat").getValue().toString();
+
+        DataSnapshot chats = dataSnapshot.child("chats").child(chat);
+
+        for(DataSnapshot item : chats.getChildren()) {
             ChatModel data = item.getValue(ChatModel.class);
             chatAdapter.addMessage(data);
         }
