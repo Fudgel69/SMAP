@@ -55,9 +55,6 @@ public class ChatFragment extends Fragment {
         Username = User.getDisplayName();
         UserID = User.getUid();
 
-        //Username = getContext().getSharedPreferences("APP_PREFS", Context.MODE_PRIVATE).getString("username", "User");
-        //UserID = getContext().getSharedPreferences("APP_PREFS", Context.MODE_PRIVATE).getString("id", "0000");
-
         setupConnection();
     }
 

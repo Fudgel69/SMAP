@@ -1,6 +1,10 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-as\\values-as.xml",
+            "map": [
+=======
             "outputFile": "C:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-as\\values-as.xml",
             "map": [
                 {
@@ -20,6 +24,7 @@
                         "endOffsets": "5655"
                     }
                 },
+>>>>>>> master
                 {
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\43d05d59cba70d882f1b13a581e34da4\\res\\values-as\\values.xml",
                     "from": {
@@ -55,7 +60,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
+                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\aecf4c93667d80927e0f9a31fee316b6\\res\\values-as\\values.xml",
+=======
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\8f7c7ce446d818fefbbe00b8407bc21f\\res\\values-as\\values.xml",
+>>>>>>> master
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -70,6 +79,26 @@
                         "endColumns": "184",
                         "endOffsets": "4171"
                     }
+<<<<<<< HEAD
+                },
+                {
+                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\6a6e6f7acbc3f962e20d2b7d72518898\\res\\values-as\\values-as.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "48",
+                        "startColumns": "4",
+                        "startOffsets": "5559",
+                        "endColumns": "100",
+                        "endOffsets": "5655"
+                    }
+=======
+>>>>>>> master
                 }
             ]
         }
