@@ -100,7 +100,7 @@ public class ChatFragment extends Fragment {
 
     private void setupConnection() {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        dbRef = database.getReference("chats");
+        dbRef = database.getReference("chats/Chat1");
 
         dbRef.addValueEventListener(new ValueEventListener() {
             @Override
