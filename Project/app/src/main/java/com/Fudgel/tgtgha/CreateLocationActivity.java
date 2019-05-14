@@ -49,6 +49,7 @@ public class CreateLocationActivity extends AppCompatActivity {
     private User user;
 
     private String userName;
+    private FirebaseUser firebaseUser;
     private String userID;
     private String userImageUrl;
     private String userGender;
@@ -64,7 +65,6 @@ public class CreateLocationActivity extends AppCompatActivity {
     private static final int CAMERA_PIC_REQUEST = 1888;
     private static final int MY_CAMERA_PERMISSION_CODE = 100;
 
-    //FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -180,10 +180,10 @@ public class CreateLocationActivity extends AppCompatActivity {
         image_profile = findViewById(R.id.img_createlocation_userImage);
 
 
-        String name = user.getDisplayName();
-        String [] names = name.split(" ");
+        String userName = firebaseUser.getDisplayName();
+        String [] names = userName.split(" ");
         txt_addName.setText(names[0]);
-        user = FirebaseAuth.getInstance().getCurrentUser();
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         userID = firebaseUser.getUid();
         userName = firebaseUser.getDisplayName();
         txt_addName.setText(userName);
