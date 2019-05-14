@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-#Mon May 13 16:11:31 CEST 2019
-=======
-#Mon May 13 15:47:26 CEST 2019
->>>>>>> master
+#Tue May 14 11:06:42 CEST 2019

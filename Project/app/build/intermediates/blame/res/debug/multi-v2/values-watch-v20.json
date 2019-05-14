@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\ef4ce2efa9192fa74c85c02f9b126d10\\res\\values-watch-v20\\values.xml",
-=======
             "outputFile": "C:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\d31ae1996aa10ad3603e39eba578556d\\res\\values-watch-v20\\values.xml",
->>>>>>> master
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -28,11 +21,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\3f31da6b7e6c458d307d427d4a2e1233\\res\\values-watch-v20\\values-watch-v20.xml",
-=======
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\4df46bff328cbbcfa0091f0fe9b47a40\\res\\values-watch-v20\\values-watch-v20.xml",
->>>>>>> master
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

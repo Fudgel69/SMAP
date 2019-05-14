@@ -2,195 +2,27 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="28"
-<<<<<<< HEAD
-    build-mode="FULL"
-    density="xxhdpi"
-    format="10"
-    plugin-version="3.4.0"
-<<<<<<< Updated upstream
-=======
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="CLASS_ADDED"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.4.0"
-<<<<<<< HEAD
-    timestamp="1557821881688"
+    timestamp="1557825214300"
     token="-8387666466022416337"
-=======
->>>>>>> master
-    timestamp="1557752849996"
-    token="1353075982122905196"
-    verifier="FULL_BUILD_REQUESTED" >
-
-    <task
-        name="javac"
-        duration="636" />
-=======
-    ir-eligibility="FIELD_TYPE_CHANGE"
-    plugin-version="3.4.0"
-    timestamp="1557753186177"
-=======
-    timestamp="1557821748190"
->>>>>>> Stashed changes
-    token="4012512253188317859"
-<<<<<<< HEAD
-    verifier="FULL_BUILD_REQUESTED" >
-
-    <task
-        name="javac"
-        duration="1169" />
-=======
->>>>>>> master
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="633" />
->>>>>>> master
+        duration="1286" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-<<<<<<< HEAD
-        duration="124" />
-=======
-<<<<<<< HEAD
-        duration="61" />
-=======
-<<<<<<< Updated upstream
-        duration="84" />
->>>>>>> master
+        duration="103" />
     <task
         name="verifier"
-<<<<<<< Updated upstream
-        duration="6" />
-
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-=======
-        duration="77" />
-
-    <artifact
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
->>>>>>> Stashed changes
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
-    <artifact
-<<<<<<< Updated upstream
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-=======
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
->>>>>>> Stashed changes
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
-
-    <build
-        build-mode="FULL"
-<<<<<<< Updated upstream
-        timestamp="1557752849996"
-        verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-=======
-<<<<<<< HEAD
-        timestamp="1557821748190"
-        verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
->>>>>>> Stashed changes
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-=======
-        duration="39" />
->>>>>>> master
-    <task
-        name="verifier"
-        duration="9" />
+        duration="12" />
 
     <artifact
         location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -198,7 +30,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1557818962869"
+        timestamp="1557825005454"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -211,62 +43,29 @@
             type="SPLIT" />
         <artifact
             location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
->>>>>>> master
             type="SPLIT" />
         <artifact
             location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-<<<<<<< HEAD
-            location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-=======
             location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
->>>>>>> master
             type="SPLIT" />
         <artifact
             location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-=======
             location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
->>>>>>> master
             type="SPLIT" />
         <artifact
             location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-<<<<<<< HEAD
             location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-=======
-<<<<<<< HEAD
-            location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-=======
-            location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
->>>>>>> Stashed changes
             type="SPLIT" />
         <artifact
-            location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-=======
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
->>>>>>> master
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
->>>>>>> master
-            type="SPLIT" />
-        <artifact
-<<<<<<< HEAD
-            location="C:\Users\tss\Documents\Skole\SMAP\Project\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-=======
             location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
@@ -275,13 +74,12 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1557821881688"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1557825214300"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\rbl.DELEGATE\Documents\Skole\Afleveringer\Smap\RepoSmap\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
     </build>
->>>>>>> master
 
 </instant-run>

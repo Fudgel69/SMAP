@@ -1,10 +1,6 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
-            "map": [
-=======
             "outputFile": "C:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
             "map": [
                 {
@@ -24,7 +20,6 @@
                         "endOffsets": "5707"
                     }
                 },
->>>>>>> master
                 {
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\4df46bff328cbbcfa0091f0fe9b47a40\\res\\values-bs\\values-bs.xml",
                     "from": {
@@ -43,11 +38,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\8a617e1946cc8da9187d7fcc29c56625\\res\\values-bs\\values.xml",
-=======
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\43d05d59cba70d882f1b13a581e34da4\\res\\values-bs\\values.xml",
->>>>>>> master
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -64,11 +55,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\6a6e6f7acbc3f962e20d2b7d72518898\\res\\values-bs\\values-bs.xml",
-=======
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\8f7c7ce446d818fefbbe00b8407bc21f\\res\\values-bs\\values.xml",
->>>>>>> master
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -79,26 +66,6 @@
                     "to": {
                         "startLines": "37",
                         "startColumns": "4",
-<<<<<<< HEAD
-                        "startOffsets": "5611",
-                        "endColumns": "100",
-                        "endOffsets": "5707"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\aecf4c93667d80927e0f9a31fee316b6\\res\\values-bs\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "199",
-                        "endOffsets": "446"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-=======
->>>>>>> master
                         "startOffsets": "3992",
                         "endColumns": "199",
                         "endOffsets": "4187"

@@ -1,12 +1,6 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es\\values-es.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\be6c8502096f650690717e11c8077741\\res\\values-es\\values-es.xml",
-=======
             "outputFile": "C:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es\\values-es.xml",
             "map": [
                 {
@@ -45,7 +39,6 @@
                 },
                 {
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\4e7032db272bfc05ab0c77dbf85ce2e9\\res\\values-es\\values-es.xml",
->>>>>>> master
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -62,11 +55,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\3f31da6b7e6c458d307d427d4a2e1233\\res\\values-es\\values-es.xml",
-=======
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\8f7c7ce446d818fefbbe00b8407bc21f\\res\\values-es\\values.xml",
->>>>>>> master
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -83,11 +72,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\8a617e1946cc8da9187d7fcc29c56625\\res\\values-es\\values.xml",
-=======
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\a3dc5181ff12f46d9f6049716c99c44a\\res\\values-es\\values-es.xml",
->>>>>>> master
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -104,11 +89,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\71c883c555c34217560463e92989ec0a\\res\\values-es\\values-es.xml",
-=======
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\b55b74f46ff75f43c1a687a96fc119f9\\res\\values-es\\values-es.xml",
->>>>>>> master
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -123,43 +104,6 @@
                         "endColumns": "325,76,100,56,55,47,135,50,118,61,95,134,437,99,98,162,64,206,98,108,182,58,101,245,468,112,178,111,124,84,100,81,108,83,65,58,54,54,55,56,104,103,91,114,60,54,197,56,135,61,69,98,65,65,76,71,84,66,82,75,62,91,81,77,77,81,98,79,158,249,72,93,84,64,108,63,77,80,89,87,54,73,85,374,76,114,143",
                         "endOffsets": "426,8631,8732,8789,8845,8893,9029,9080,9199,9261,9357,9492,9930,10030,10129,10292,10357,10564,10663,10772,10955,11014,11116,11362,11831,11944,12123,12235,12360,12445,12546,12628,12737,12821,12887,12946,13001,13056,13112,13169,13274,13378,13470,13585,13646,13701,13899,13956,14092,14154,14224,14323,14389,14455,14532,14604,14689,14756,14839,14915,14978,15070,15152,15230,15308,15390,15489,15569,15728,15978,16051,16145,16230,16295,16404,16468,16546,16627,16717,16805,16860,16934,17020,17395,17472,17587,17731"
                     }
-<<<<<<< HEAD
-                },
-                {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\6a6e6f7acbc3f962e20d2b7d72518898\\res\\values-es\\values-es.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "158",
-                        "startColumns": "4",
-                        "startOffsets": "17818",
-                        "endColumns": "100",
-                        "endOffsets": "17914"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\aecf4c93667d80927e0f9a31fee316b6\\res\\values-es\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "218",
-                        "endOffsets": "465"
-                    },
-                    "to": {
-                        "startLines": "61",
-                        "startColumns": "4",
-                        "startOffsets": "6927",
-                        "endColumns": "218",
-                        "endOffsets": "7141"
-                    }
-=======
->>>>>>> master
                 }
             ]
         }

@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-#Mon May 13 15:37:45 CEST 2019
-base.0=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
-=======
-#Mon May 13 15:47:46 CEST 2019
+#Tue May 14 11:07:15 CEST 2019
 base.0=C\:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
->>>>>>> master
 path.0=classes.dex
 renamed.0=classes.dex
