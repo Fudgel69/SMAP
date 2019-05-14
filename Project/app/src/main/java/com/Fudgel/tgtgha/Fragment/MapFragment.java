@@ -1,6 +1,7 @@
 package com.Fudgel.tgtgha.Fragment;
 
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -18,6 +19,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 
 import com.Fudgel.tgtgha.R;
 import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -73,8 +75,13 @@ public class MapFragment extends Fragment {
                         .build();
 
                 mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(56.156635, 10.210365))
-                .title("Location of da frand"));
+                        .position(new LatLng(56.156635, 10.210365))
+                        .title("Location of da frand"));
+
+                mMap.addCircle(new CircleOptions()
+                        .center(new LatLng(56.2,10.180556))
+                        .radius(500)
+                        .strokeColor(Color.RED));
 
                 mMap.animateCamera(CameraUpdateFactory.newCameraPosition(googlePlex), 1000, null);
 
