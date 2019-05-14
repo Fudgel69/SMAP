@@ -1,36 +1,6 @@
 {
     "logs": [
         {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            "outputFile": "C:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-be\\values-be.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\simon\\.gradle\\caches\\transforms-2\\files-2.1\\741806edc7e8abbe196891f631e25a02\\res\\values-be\\values.xml",
-=======
-            "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-be\\values-be.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\aecf4c93667d80927e0f9a31fee316b6\\res\\values-be\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "204",
-                        "endOffsets": "451"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3996",
-                        "endColumns": "204",
-                        "endOffsets": "4196"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\8a617e1946cc8da9187d7fcc29c56625\\res\\values-be\\values.xml",
->>>>>>> Stashed changes
-=======
             "outputFile": "C:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-be\\values-be.xml",
             "map": [
                 {
@@ -52,7 +22,6 @@
                 },
                 {
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\43d05d59cba70d882f1b13a581e34da4\\res\\values-be\\values.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -69,33 +38,7 @@
                     }
                 },
                 {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                    "source": "C:\\Users\\simon\\.gradle\\caches\\transforms-2\\files-2.1\\fd058002eedb6b16f16a20bd0e170a16\\res\\values-be\\values-be.xml",
-=======
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\6a6e6f7acbc3f962e20d2b7d72518898\\res\\values-be\\values-be.xml",
->>>>>>> Stashed changes
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "48",
-                        "startColumns": "4",
-                        "startOffsets": "5636",
-                        "endColumns": "100",
-                        "endOffsets": "5732"
-                    }
-<<<<<<< Updated upstream
-                },
-                {
-                    "source": "C:\\Users\\simon\\.gradle\\caches\\transforms-2\\files-2.1\\056b8fb7b1e3e56c8977f0a938003369\\res\\values-be\\values.xml",
-=======
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\8f7c7ce446d818fefbbe00b8407bc21f\\res\\values-be\\values.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -110,8 +53,6 @@
                         "endColumns": "204",
                         "endOffsets": "4196"
                     }
-=======
->>>>>>> Stashed changes
                 },
                 {
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\a3dc5181ff12f46d9f6049716c99c44a\\res\\values-be\\values-be.xml",

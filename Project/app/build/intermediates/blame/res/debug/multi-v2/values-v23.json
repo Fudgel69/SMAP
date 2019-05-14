@@ -1,19 +1,6 @@
 {
     "logs": [
         {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            "outputFile": "C:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\simon\\.gradle\\caches\\transforms-2\\files-2.1\\e04d54a52c966a51368263749ae15ab6\\res\\values-v23\\values-v23.xml",
-=======
-            "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\69287dc7e456024e67f3a95cf5c92ad2\\res\\values-v23\\values-v23.xml",
->>>>>>> Stashed changes
-=======
             "outputFile": "C:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
@@ -29,7 +16,6 @@
                 },
                 {
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\391a7b17e19036c29f33da012f5ea990\\res\\values-v23\\values-v23.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

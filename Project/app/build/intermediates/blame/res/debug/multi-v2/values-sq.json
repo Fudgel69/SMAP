@@ -1,12 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            "outputFile": "C:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
-=======
             "outputFile": "C:\\Users\\rbl.DELEGATE\\Documents\\Skole\\Afleveringer\\Smap\\RepoSmap\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
->>>>>>> Stashed changes
             "map": [
                 {
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\43d05d59cba70d882f1b13a581e34da4\\res\\values-sq\\values.xml",
@@ -43,17 +38,7 @@
                     }
                 },
                 {
-<<<<<<< Updated upstream
-                    "source": "C:\\Users\\simon\\.gradle\\caches\\transforms-2\\files-2.1\\fd058002eedb6b16f16a20bd0e170a16\\res\\values-sq\\values-sq.xml",
-=======
-            "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\6a6e6f7acbc3f962e20d2b7d72518898\\res\\values-sq\\values-sq.xml",
->>>>>>> Stashed changes
-=======
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\a3dc5181ff12f46d9f6049716c99c44a\\res\\values-sq\\values-sq.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -70,15 +55,7 @@
                     }
                 },
                 {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                    "source": "C:\\Users\\simon\\.gradle\\caches\\transforms-2\\files-2.1\\056b8fb7b1e3e56c8977f0a938003369\\res\\values-sq\\values.xml",
-=======
-                    "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\aecf4c93667d80927e0f9a31fee316b6\\res\\values-sq\\values.xml",
->>>>>>> Stashed changes
-=======
                     "source": "C:\\Users\\rbl.DELEGATE\\.gradle\\caches\\transforms-2\\files-2.1\\8f7c7ce446d818fefbbe00b8407bc21f\\res\\values-sq\\values.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

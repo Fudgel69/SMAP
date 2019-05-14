@@ -1,9 +1,1 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-#Mon May 13 14:52:36 CEST 2019
-=======
-#Mon May 13 14:48:53 CEST 2019
->>>>>>> Stashed changes
-=======
-#Mon May 13 14:48:44 CEST 2019
->>>>>>> Stashed changes
+#Mon May 13 15:47:26 CEST 2019
