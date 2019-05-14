@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "546399871668-4kb9371qbo4e7lmoa4fe50cs1ilu9o7e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Fudgel.tgtgha",
+            "certificate_hash": "e32afdb00f9a61856562f99d6094d5ab52bede34"
+          }
+        },
+        {
           "client_id": "546399871668-hnh1p9slh0ihjtu9chavkv1q7t2fb6ut.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
