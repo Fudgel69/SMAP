@@ -131,8 +131,12 @@ public class ChatFragment extends Fragment {
         DataSnapshot chats = dataSnapshot.child("chats").child(chat);
 
         for(DataSnapshot item : chats.getChildren()) {
-            ChatModel data = item.getValue(ChatModel.class);
-            chatAdapter.addMessage(data);
+            try {
+                ChatModel data = item.getValue(ChatModel.class);
+                chatAdapter.addMessage(data);
+            }catch (Exception e){
+                Log.e("Chat","Trying to get users as messages lol..." );
+            }
         }
 
         chatAdapter.notifyDataSetChanged();
