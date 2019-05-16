@@ -44,6 +44,7 @@ public class MapFragment extends Fragment {
     private FusedLocationProviderClient fusedLocationProviderClient;
     private SupportMapFragment mapFragment;
     private GoogleMap map;
+    private LatLng areaGoal;
 
     public MapFragment() {
         // Required empty public constructor
@@ -62,6 +63,8 @@ public class MapFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_map, container, false);
+
+        areaGoal = new LatLng(56.2,10.180556);
 
         mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.fragmentMap);  //use SuppoprtMapFragment for using in fragment instead of activity  MapFragment = activity   SupportMapFragment = fragment
         mapFragment.getMapAsync(new OnMapReadyCallback() {
@@ -92,10 +95,7 @@ public class MapFragment extends Fragment {
                         .position(new LatLng(56.156635, 10.210365))
                         .title("Location of da frand"));
 
-                map.addCircle(new CircleOptions()
-                        .center(new LatLng(56.2,10.180556))
-                        .radius(500)
-                        .strokeColor(Color.RED));
+
 
                 map.animateCamera(CameraUpdateFactory.newCameraPosition(googlePlex), 1000, null);
 
@@ -151,13 +151,14 @@ public class MapFragment extends Fragment {
 
         String chat = dataSnapshot.child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("Chat").getValue().toString();
 
-        if (dataSnapshot.child("chats").child(chat).child("users").child("1").getValue() == FirebaseAuth.getInstance().getCurrentUser().getUid()){
+        if (!dataSnapshot.child("chats").child(chat).child("users").child("1").getValue().toString().equals(FirebaseAuth.getInstance().getCurrentUser().getUid())){
 
             loc = new LatLng(
                     (Double) dataSnapshot.child("Users").child(dataSnapshot.child("chats").child(chat).child("users").child("1").getValue().toString()).child("location").child("latitude").getValue(),
                     (Double) dataSnapshot.child("Users").child(dataSnapshot.child("chats").child(chat).child("users").child("1").getValue().toString()).child("location").child("longitude").getValue());
             map.addMarker(new MarkerOptions()
                     .position(loc)
+                    .title(dataSnapshot.child("Users").child(dataSnapshot.child("chats").child(chat).child("users").child("1").getValue().toString()).child("userName").getValue().toString())
             );
         } else {
             loc = new LatLng(
@@ -165,8 +166,14 @@ public class MapFragment extends Fragment {
                     (Double) dataSnapshot.child("Users").child(dataSnapshot.child("chats").child(chat).child("users").child("2").getValue().toString()).child("location").child("longitude").getValue());
             map.addMarker(new MarkerOptions()
                     .position(loc)
+                    .title(dataSnapshot.child("Users").child(dataSnapshot.child("chats").child(chat).child("users").child("2").getValue().toString()).child("userName").getValue().toString())
             );
         }
+
+        map.addCircle(new CircleOptions()
+                .center(areaGoal)
+                .radius(500)
+                .strokeColor(Color.RED));
 
     }
 }
