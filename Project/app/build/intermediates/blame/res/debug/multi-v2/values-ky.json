@@ -1,12 +1,6 @@
 {
     "logs": [
         {
-<<<<<<< Updated upstream
-            "outputFile": "D:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ky\\values-ky.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Rune\\.gradle\\caches\\transforms-2\\files-2.1\\9409f018f1c789234923dc0a76be5aad\\res\\values-ky\\values.xml",
-=======
             "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ky\\values-ky.xml",
             "map": [
                 {
@@ -28,7 +22,6 @@
                 },
                 {
                     "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\aecf4c93667d80927e0f9a31fee316b6\\res\\values-ky\\values.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -45,11 +38,7 @@
                     }
                 },
                 {
-<<<<<<< Updated upstream
-                    "source": "C:\\Users\\Rune\\.gradle\\caches\\transforms-2\\files-2.1\\3d9463955a17a2940cfbe44aa289f523\\res\\values-ky\\values-ky.xml",
-=======
                     "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\3f31da6b7e6c458d307d427d4a2e1233\\res\\values-ky\\values-ky.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -66,28 +55,7 @@
                     }
                 },
                 {
-<<<<<<< Updated upstream
-                    "source": "C:\\Users\\Rune\\.gradle\\caches\\transforms-2\\files-2.1\\ae9492f3c7496a30f6a704990ab32fb4\\res\\values-ky\\values-ky.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "48",
-                        "startColumns": "4",
-                        "startOffsets": "5583",
-                        "endColumns": "100",
-                        "endOffsets": "5679"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Rune\\.gradle\\caches\\transforms-2\\files-2.1\\4942721ea17dd610f4998fa3c4ce10ac\\res\\values-ky\\values.xml",
-=======
                     "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\6a6e6f7acbc3f962e20d2b7d72518898\\res\\values-ky\\values-ky.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

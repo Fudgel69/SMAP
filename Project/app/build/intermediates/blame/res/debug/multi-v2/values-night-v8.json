@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< Updated upstream
-            "outputFile": "D:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Rune\\.gradle\\caches\\transforms-2\\files-2.1\\3d9463955a17a2940cfbe44aa289f523\\res\\values-night-v8\\values-night-v8.xml",
-=======
             "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\3f31da6b7e6c458d307d427d4a2e1233\\res\\values-night-v8\\values-night-v8.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

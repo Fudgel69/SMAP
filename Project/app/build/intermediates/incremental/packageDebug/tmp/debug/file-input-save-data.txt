@@ -1,6 +1,7 @@
 #Internal package file, do not edit.
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #Wed May 15 18:58:24 CEST 2019
 1.base=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 =======
@@ -25,13 +26,16 @@
 count=2
 =======
 #Thu May 16 09:32:15 CEST 2019
+=======
+#Thu May 16 17:22:51 CEST 2019
+>>>>>>> Stashed changes
 4.path=classes.dex
 8.set=DEX
 6.path=classes.dex
 0.baseType=DIRECTORY
 10.path=classes.dex
 5.baseType=DIRECTORY
-1.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
+1.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\merged_assets\\debug\\out
 8.path=classes.dex
 3.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
 4.set=DEX
@@ -41,9 +45,13 @@ count=2
 9.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
 1.baseType=DIRECTORY
 11.set=DEX
+<<<<<<< Updated upstream
 0.set=ASSET
 =======
 11.set=DEX
+0.set=DEX
+>>>>>>> Stashed changes
+=======
 0.set=DEX
 >>>>>>> Stashed changes
 6.baseType=DIRECTORY
@@ -52,7 +60,11 @@ count=2
 2.baseType=DIRECTORY
 10.baseType=DIRECTORY
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 1.path=classes.dex
+=======
+1.path=crashlytics-build.properties
+>>>>>>> Stashed changes
 =======
 1.path=crashlytics-build.properties
 >>>>>>> Stashed changes
@@ -61,9 +73,13 @@ count=2
 10.set=DEX
 5.path=classes.dex
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 0.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\merged_assets\\debug\\out
 =======
 0.base=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\20
+>>>>>>> Stashed changes
+=======
+0.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 >>>>>>> Stashed changes
 7.path=classes.dex
 11.path=classes.dex
@@ -94,6 +110,7 @@ count=12
 5.set=DEX
 9.baseType=DIRECTORY
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 0.path=crashlytics-build.properties
 >>>>>>> Stashed changes
 1.set=DEX
@@ -101,6 +118,11 @@ count=12
 0.set=ASSET
 0.base=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\merged_assets\\debug\\out
 1.path=classes.dex
+=======
+0.path=classes.dex
+1.set=ASSET
+2.path=classes.dex
+>>>>>>> Stashed changes
 =======
 0.path=classes.dex
 1.set=ASSET

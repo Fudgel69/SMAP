@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< Updated upstream
-            "outputFile": "D:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw360dp-v13\\values-sw360dp-v13.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Rune\\.gradle\\caches\\transforms-2\\files-2.1\\de42459a1e15749d188647e336d36b72\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
-=======
             "outputFile": "C:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw360dp-v13\\values-sw360dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tss\\.gradle\\caches\\transforms-2\\files-2.1\\71c883c555c34217560463e92989ec0a\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

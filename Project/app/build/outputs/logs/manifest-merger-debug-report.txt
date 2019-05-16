@@ -1,6 +1,7 @@
 -- Merging decision tree log ---
 manifest
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-40:12
@@ -1187,6 +1188,8 @@ ADDED from [com.facebook.android:facebook-core:5.0.0] C:\Users\simon\.gradle\cac
 <<<<<<< HEAD
 		ADDED from [com.facebook.android:facebook-core:5.0.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\459bed1c7a5516fb03beee0b299677ca\AndroidManifest.xml:48:25-92
 =======
+=======
+>>>>>>> Stashed changes
 ADDED from C:\Users\tss\Documents\Skole\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-44:12
 INJECTED from C:\Users\tss\Documents\Skole\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-44:12
 INJECTED from C:\Users\tss\Documents\Skole\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-44:12
@@ -2092,7 +2095,3 @@ action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
 ADDED from [com.facebook.android:facebook-core:5.0.0] C:\Users\tss\.gradle\caches\transforms-2\files-2.1\ceb1af96537bcdd4ebcf966ea86a91ae\AndroidManifest.xml:48:17-95
 	android:name
 		ADDED from [com.facebook.android:facebook-core:5.0.0] C:\Users\tss\.gradle\caches\transforms-2\files-2.1\ceb1af96537bcdd4ebcf966ea86a91ae\AndroidManifest.xml:48:25-92
->>>>>>> Stashed changes
-=======
-		ADDED from [com.facebook.android:facebook-core:5.0.0] C:\Users\simon\.gradle\caches\transforms-2\files-2.1\02904f5eb5b29f1098520e2cfc579e48\AndroidManifest.xml:48:25-92
->>>>>>> master

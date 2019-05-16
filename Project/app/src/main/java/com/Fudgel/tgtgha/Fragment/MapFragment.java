@@ -6,10 +6,13 @@ import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
+import com.Fudgel.tgtgha.Model.ChatModel;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -24,7 +27,14 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.util.Date;
 
 
 public class MapFragment extends Fragment {
@@ -32,6 +42,8 @@ public class MapFragment extends Fragment {
 
     private Location myLocation = new Location("");
     private FusedLocationProviderClient fusedLocationProviderClient;
+    private SupportMapFragment mapFragment;
+    private GoogleMap map;
 
     public MapFragment() {
         // Required empty public constructor
@@ -51,21 +63,23 @@ public class MapFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_map, container, false);
 
-        SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.fragmentMap);  //use SuppoprtMapFragment for using in fragment instead of activity  MapFragment = activity   SupportMapFragment = fragment
+        mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.fragmentMap);  //use SuppoprtMapFragment for using in fragment instead of activity  MapFragment = activity   SupportMapFragment = fragment
         mapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap mMap) {
 
+                map = mMap;
+
                 LatLng latLng = new LatLng(myLocation.getLatitude(),myLocation.getLongitude());
 
-                mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+                map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
-                mMap.clear(); //clear old markers
+                map.clear(); //clear old markers
 
                 if ( ContextCompat.checkSelfPermission( getContext(), android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
                     requestPermissions(new String[]{ android.Manifest.permission.ACCESS_FINE_LOCATION},1 );
                 }
-                mMap.setMyLocationEnabled(true);
+                map.setMyLocationEnabled(true);
 
                 CameraPosition googlePlex = CameraPosition.builder()
                         .target(new LatLng( 56.156635, 10.210365))
@@ -74,20 +88,21 @@ public class MapFragment extends Fragment {
                         .tilt(45)
                         .build();
 
-                mMap.addMarker(new MarkerOptions()
+                map.addMarker(new MarkerOptions()
                         .position(new LatLng(56.156635, 10.210365))
                         .title("Location of da frand"));
 
-                mMap.addCircle(new CircleOptions()
+                map.addCircle(new CircleOptions()
                         .center(new LatLng(56.2,10.180556))
                         .radius(500)
                         .strokeColor(Color.RED));
 
-                mMap.animateCamera(CameraUpdateFactory.newCameraPosition(googlePlex), 1000, null);
+                map.animateCamera(CameraUpdateFactory.newCameraPosition(googlePlex), 1000, null);
 
             }
         });
 
+        getFriends();
 
         return rootView;
     }
@@ -107,6 +122,51 @@ public class MapFragment extends Fragment {
                 }
             }
         });
+
+    }
+
+    public void getFriends(){
+
+
+        FirebaseDatabase.getInstance().getReference().addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Log.d("Chat","SUCCESS!");
+                handleFirends(dataSnapshot);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.e("Chat","ERROR: " + databaseError.getMessage());
+                Toast.makeText(getContext(), "Connection refused!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+
+    public void handleFirends(DataSnapshot dataSnapshot){
+
+        map.clear();
+        LatLng loc;
+
+        String chat = dataSnapshot.child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("Chat").getValue().toString();
+
+        if (dataSnapshot.child("chats").child(chat).child("users").child("1").getValue() == FirebaseAuth.getInstance().getCurrentUser().getUid()){
+
+            loc = new LatLng(
+                    (Double) dataSnapshot.child("Users").child(dataSnapshot.child("chats").child(chat).child("users").child("1").getValue().toString()).child("location").child("latitude").getValue(),
+                    (Double) dataSnapshot.child("Users").child(dataSnapshot.child("chats").child(chat).child("users").child("1").getValue().toString()).child("location").child("longitude").getValue());
+            map.addMarker(new MarkerOptions()
+                    .position(loc)
+            );
+        } else {
+            loc = new LatLng(
+                    (Double) dataSnapshot.child("Users").child(dataSnapshot.child("chats").child(chat).child("users").child("2").getValue().toString()).child("location").child("latitude").getValue(),
+                    (Double) dataSnapshot.child("Users").child(dataSnapshot.child("chats").child(chat).child("users").child("2").getValue().toString()).child("location").child("longitude").getValue());
+            map.addMarker(new MarkerOptions()
+                    .position(loc)
+            );
+        }
 
     }
 }
