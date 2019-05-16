@@ -1,5 +1,21 @@
 #Internal package file, do not edit.
+<<<<<<< HEAD
 #Thu May 16 18:20:14 CEST 2019
+=======
+<<<<<<< HEAD
+#Thu May 16 18:07:31 CEST 2019
+1.base=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=crashlytics-build.properties
+0.set=ASSET
+0.base=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\merged_assets\\debug\\out
+1.path=classes.dex
+=======
+#Thu May 16 18:01:47 CEST 2019
+>>>>>>> master
 4.path=classes.dex
 8.set=DEX
 6.path=classes.dex
@@ -49,3 +65,4 @@ count=12
 0.path=classes.dex
 1.set=DEX
 2.path=classes.dex
+>>>>>>> master

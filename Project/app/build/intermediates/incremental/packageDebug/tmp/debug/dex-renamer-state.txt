@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 #Thu May 16 18:20:14 CEST 2019
+=======
+<<<<<<< HEAD
+#Thu May 16 18:07:30 CEST 2019
+base.0=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
+=======
+#Thu May 16 18:01:47 CEST 2019
+>>>>>>> master
 path.1=classes.dex
 path.0=classes.dex
 renamed.10=classes11.dex
@@ -32,3 +42,4 @@ path.5=classes.dex
 path.4=classes.dex
 path.3=classes.dex
 path.2=classes.dex
+>>>>>>> master
