@@ -83,16 +83,17 @@ public class ChatActivity extends AppCompatActivity {
                 appService = ((AppService.AppBinder) service).getService();
                 if(!serviceStarted)
                 {
+                    Log.d("Service: ", "Trying to start service...");
                     appService.startService(new Intent(ChatActivity.this, AppService.class));
                     serviceStarted = true;
                 }
-                Log.d("Success: ", "FilmService connected");
+                Log.d("Success: ", "AppService connected");
             }
 
             @Override
             public void onServiceDisconnected(ComponentName className) {
                 bound = false;
-                Log.d("Error: ", "FilmService disconnected");
+                Log.d("Error: ", "AppService disconnected");
             }
         };
     }
