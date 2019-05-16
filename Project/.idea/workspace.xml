@@ -55,6 +55,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="336b5ba0-3bcb-4de1-ad19-f2bfb5dc5e50" name="Default Changelist" comment="">
 <<<<<<< Updated upstream
 >>>>>>> master
@@ -1447,6 +1448,9 @@
 >>>>>>> Stashed changes
 >>>>>>> master
     </list>
+=======
+    <list default="true" id="336b5ba0-3bcb-4de1-ad19-f2bfb5dc5e50" name="Default Changelist" comment="" />
+>>>>>>> master
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1461,7 +1465,6 @@
     </system>
   </component>
   <component name="FileEditorManager">
-<<<<<<< Updated upstream
     <leaf>
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
@@ -1479,28 +1482,12 @@
                 <element signature="e#0#210#0" expanded="true" />
 >>>>>>> master
               </folding>
-=======
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Fudgel/tgtgha/Fragment/MapFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="113" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Fudgel/tgtgha/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
->>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -1521,10 +1508,13 @@
 =======
 <<<<<<< Updated upstream
 >>>>>>> master
+=======
+>>>>>>> master
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Fudgel/tgtgha/Database/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> master
 =======
@@ -1561,6 +1551,8 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1870">
               <caret line="137" column="68" selection-start-line="137" selection-start-column="68" selection-end-line="137" selection-end-column="68" />
+=======
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -1568,27 +1560,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Fudgel/tgtgha/Service/AppService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="48" column="47" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="47" />
+            <state relative-caret-position="391">
+              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Fudgel/tgtgha/Model/ChatModel.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Fudgel/tgtgha/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="-1037">
+              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Fudgel/tgtgha/Adapter/ChatAdapter.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Fudgel/tgtgha/CreateLocationActivity.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-280">
               <caret line="19" column="83" lean-forward="true" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
 >>>>>>> Stashed changes
+>>>>>>> master
+=======
+            <state relative-caret-position="973">
+              <caret line="257" column="40" selection-start-line="257" selection-start-column="21" selection-end-line="257" selection-end-column="40" />
 >>>>>>> master
             </state>
           </provider>
@@ -1609,6 +1606,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -1625,6 +1623,8 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> master
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="153" />
     <option name="y" value="105" />
@@ -1639,9 +1639,12 @@
     <panes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< Updated upstream
+>>>>>>> master
+=======
 >>>>>>> master
       <pane id="AndroidView">
         <subPane>
@@ -1693,8 +1696,6 @@
           <select />
         </subPane>
       </pane>
-=======
->>>>>>> Stashed changes
       <pane id="PackagesPane" />
 >>>>>>> master
       <pane id="Scope" />
@@ -1738,49 +1739,19 @@
         </subPane>
       </pane>
       <pane id="ProjectPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="Project" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="Project" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="Project" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="tgtgha" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="tgtgha" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <property name="device.picker.selection" value="2252108435017ece" />
 =======
     <property name="device.picker.selection" value="RF8M20FGE6J" />
 >>>>>>> master
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
+>>>>>>> master
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RunDashboard">
@@ -1911,20 +1882,30 @@
 =======
 =======
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" visible="true" weight="0.17110874" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 >>>>>>> master
+=======
+>>>>>>> master
       <window_info anchor="bottom" id="Run" />
-      <window_info anchor="bottom" id="Logcat" />
+      <window_info anchor="bottom" id="Logcat" weight="0.1516793" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" />
       <window_info anchor="bottom" id="Debug" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.276273" />
+      <window_info active="true" anchor="bottom" id="Build" visible="true" weight="0.2751896" />
       <window_info anchor="right" id="Device File Explorer" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Gradle" />
@@ -1932,6 +1913,7 @@
       <window_info anchor="right" id="Palette&#9;" />
     </layout>
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Fudgel/tgtgha/Database/AppDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2088,4 +2070,6 @@
       </provider>
     </entry>
   </component>
+=======
+>>>>>>> master
 </project>
