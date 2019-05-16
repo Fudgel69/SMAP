@@ -1,4 +1,5 @@
 #Internal package file, do not edit.
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 #Thu May 16 18:20:14 CEST 2019
 =======
@@ -19,7 +20,12 @@ count=2
 4.path=classes.dex
 8.set=DEX
 6.path=classes.dex
+=======
+#Thu May 16 18:26:46 CEST 2019
+1.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+>>>>>>> Stashed changes
 0.baseType=DIRECTORY
+<<<<<<< HEAD
 10.path=classes.dex
 5.baseType=DIRECTORY
 1.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\20
@@ -30,7 +36,10 @@ count=2
 7.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 11.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
 9.base=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
+=======
+>>>>>>> master
 1.baseType=DIRECTORY
+<<<<<<< Updated upstream
 11.set=DEX
 0.set=DEX
 6.baseType=DIRECTORY
@@ -66,3 +75,11 @@ count=12
 1.set=DEX
 2.path=classes.dex
 >>>>>>> master
+=======
+count=2
+1.set=DEX
+0.path=crashlytics-build.properties
+0.set=ASSET
+0.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\merged_assets\\debug\\out
+1.path=classes.dex
+>>>>>>> Stashed changes

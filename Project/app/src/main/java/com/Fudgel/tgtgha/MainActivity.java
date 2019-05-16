@@ -1,15 +1,18 @@
 package com.Fudgel.tgtgha;
 
+import android.Manifest;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.Build;
 import android.os.IBinder;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -61,6 +64,29 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if ( Build.VERSION.SDK_INT >= 23){
+            if(ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
+
+                requestPermissions(new String[]{ android.Manifest.permission.ACCESS_FINE_LOCATION},1 );
+            }
+            if(ContextCompat.checkSelfPermission( this, Manifest.permission.ACCESS_COARSE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
+
+                requestPermissions(new String[]{ android.Manifest.permission.ACCESS_COARSE_LOCATION},1 );
+            }
+            if(ContextCompat.checkSelfPermission( this, Manifest.permission.CAMERA ) != PackageManager.PERMISSION_GRANTED ) {
+
+                requestPermissions(new String[]{ Manifest.permission.CAMERA},1 );
+            }
+            if(ContextCompat.checkSelfPermission( this, Manifest.permission.LOCATION_HARDWARE ) != PackageManager.PERMISSION_GRANTED ) {
+
+                requestPermissions(new String[]{ android.Manifest.permission.LOCATION_HARDWARE},1 );
+            }
+            if(ContextCompat.checkSelfPermission( this, Manifest.permission.INTERNET ) != PackageManager.PERMISSION_GRANTED ) {
+
+                requestPermissions(new String[]{ android.Manifest.permission.INTERNET},1 );
+            }
+        }
 
         //Setup
         initProviders();
