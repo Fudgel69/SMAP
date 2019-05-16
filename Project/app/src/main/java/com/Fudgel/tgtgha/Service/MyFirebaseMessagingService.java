@@ -11,6 +11,7 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
 import android.support.v4.app.NotificationCompat;
+import android.util.Log;
 
 import com.Fudgel.tgtgha.MatchingActivity;
 import com.Fudgel.tgtgha.R;
@@ -21,6 +22,11 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     private static final String TAG = "MyFirebaseMessagingServ";
 
+    @Override
+    public void onNewToken(String s) {
+        super.onNewToken(s);
+        Log.e("NEW_TOKEN",s);
+    }
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {

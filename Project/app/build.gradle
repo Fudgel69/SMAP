@@ -38,7 +38,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.8' // Updated 07-05-19
 
     //Authentication - Firebase
-    implementation 'com.google.firebase:firebase-auth:16.2.1' // Updated 07-05-19
+    implementation 'com.google.firebase:firebase-auth:17.0.0' // Updated 07-05-19
 
     //UI - Firebass
     implementation 'com.firebaseui:firebase-ui-auth:4.3.2' // Updated 07-05-19

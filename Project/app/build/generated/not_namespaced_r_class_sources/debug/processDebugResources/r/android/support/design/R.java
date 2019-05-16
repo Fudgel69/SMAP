@@ -1287,15 +1287,15 @@ public final class R {
         public static final int character_counter_pattern = 0x7f0e002b;
         public static final int fab_transformation_scrim_behavior = 0x7f0e0057;
         public static final int fab_transformation_sheet_behavior = 0x7f0e0058;
-        public static final int hide_bottom_view_on_scroll_behavior = 0x7f0e00be;
-        public static final int mtrl_chip_close_icon_content_description = 0x7f0e00c0;
-        public static final int password_toggle_content_description = 0x7f0e00c1;
-        public static final int path_password_eye = 0x7f0e00c2;
-        public static final int path_password_eye_mask_strike_through = 0x7f0e00c3;
-        public static final int path_password_eye_mask_visible = 0x7f0e00c4;
-        public static final int path_password_strike_through = 0x7f0e00c5;
-        public static final int search_menu_title = 0x7f0e00c7;
-        public static final int status_bar_notification_info_overflow = 0x7f0e00c8;
+        public static final int hide_bottom_view_on_scroll_behavior = 0x7f0e00bf;
+        public static final int mtrl_chip_close_icon_content_description = 0x7f0e00c1;
+        public static final int password_toggle_content_description = 0x7f0e00c2;
+        public static final int path_password_eye = 0x7f0e00c3;
+        public static final int path_password_eye_mask_strike_through = 0x7f0e00c4;
+        public static final int path_password_eye_mask_visible = 0x7f0e00c5;
+        public static final int path_password_strike_through = 0x7f0e00c6;
+        public static final int search_menu_title = 0x7f0e00c8;
+        public static final int status_bar_notification_info_overflow = 0x7f0e00c9;
     }
     public static final class style {
         private style() {}
