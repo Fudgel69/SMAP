@@ -1,22 +1,6 @@
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-#Thu May 16 18:20:14 CEST 2019
-=======
-<<<<<<< HEAD
-#Thu May 16 18:07:30 CEST 2019
-base.0=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
-=======
-#Thu May 16 18:01:47 CEST 2019
->>>>>>> master
+#Thu May 16 18:30:37 CEST 2019
 path.1=classes.dex
-=======
-#Thu May 16 18:26:45 CEST 2019
-base.0=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
->>>>>>> Stashed changes
 path.0=classes.dex
-<<<<<<< HEAD
 renamed.10=classes11.dex
 renamed.9=classes10.dex
 renamed.8=classes9.dex
@@ -39,19 +23,6 @@ base.2=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermed
 base.1=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 base.0=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
 base.10=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\21
-=======
-renamed.0=classes.dex
-<<<<<<< Updated upstream
-base.7=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
-base.6=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
-base.5=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
-base.4=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
-base.3=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
-base.2=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-base.1=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
-base.0=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
-base.10=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\21
->>>>>>> master
 path.10=classes.dex
 path.9=classes.dex
 path.8=classes.dex
@@ -61,6 +32,3 @@ path.5=classes.dex
 path.4=classes.dex
 path.3=classes.dex
 path.2=classes.dex
->>>>>>> master
-=======
->>>>>>> Stashed changes

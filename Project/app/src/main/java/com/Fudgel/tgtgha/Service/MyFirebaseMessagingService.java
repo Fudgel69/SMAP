@@ -15,17 +15,24 @@ import android.util.Log;
 
 import com.Fudgel.tgtgha.MatchingActivity;
 import com.Fudgel.tgtgha.R;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+
+import java.util.concurrent.Executor;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     private static final String TAG = "MyFirebaseMessagingServ";
-
+    String newToken;
     @Override
     public void onNewToken(String s) {
-        super.onNewToken(s);
-        Log.e("NEW_TOKEN",s);
+        FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener((Executor) this, instanceIdResult -> {
+        newToken = instanceIdResult.getToken();
+        Log.e("newToken", newToken);
+        });
     }
 
     @Override
@@ -72,5 +79,13 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         notificationManager.notify(1, notificationBuilder.build());
 
 
+    }
+    String getToken()
+    {
+        FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener((Executor) this, instanceIdResult -> {
+            newToken = instanceIdResult.getToken();
+            Log.e("newToken", newToken);
+        });
+        return newToken;
     }
 }
