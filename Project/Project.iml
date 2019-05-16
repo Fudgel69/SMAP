@@ -12,16 +12,9 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
     <orderEntry type="jdk" jdkName="JDK" jdkType="JavaSDK" />
-=======
-    <orderEntry type="inheritedJdk" />
->>>>>>> Stashed changes
-=======
-    <orderEntry type="inheritedJdk" />
->>>>>>> master
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
