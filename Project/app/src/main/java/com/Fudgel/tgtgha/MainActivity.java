@@ -163,7 +163,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void initProviders() {
-        //Init Providers:
         providers = Arrays.asList(
                 //new AuthUI.IdpConfig.EmailBuilder().build(),
                 //new AuthUI.IdpConfig.PhoneBuilder().build(),

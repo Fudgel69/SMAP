@@ -1,31 +1,9 @@
 #Internal package file, do not edit.
-<<<<<<< HEAD
-#Thu May 16 18:18:02 CEST 2019
-=======
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-#Thu May 16 18:07:31 CEST 2019
-1.base=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-0.baseType=DIRECTORY
-1.baseType=DIRECTORY
-count=2
-1.set=DEX
-0.path=crashlytics-build.properties
-0.set=ASSET
-0.base=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\merged_assets\\debug\\out
-1.path=classes.dex
-=======
-#Thu May 16 18:01:47 CEST 2019
->>>>>>> master
+#Thu May 16 18:32:36 CEST 2019
 4.path=classes.dex
 8.set=DEX
 6.path=classes.dex
-=======
-#Thu May 16 18:26:46 CEST 2019
-1.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
->>>>>>> Stashed changes
 0.baseType=DIRECTORY
-<<<<<<< HEAD
 10.path=classes.dex
 5.baseType=DIRECTORY
 1.base=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\merged_assets\\debug\\out
@@ -36,10 +14,7 @@ count=2
 7.base=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
 11.base=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 9.base=D\:\\Skole\\MAL\\ProjektRepo\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
-=======
->>>>>>> master
 1.baseType=DIRECTORY
-<<<<<<< Updated upstream
 11.set=DEX
 0.set=DEX
 6.baseType=DIRECTORY
@@ -74,15 +49,3 @@ count=12
 0.path=classes.dex
 1.set=ASSET
 2.path=classes.dex
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
-count=2
-1.set=DEX
-0.path=crashlytics-build.properties
-0.set=ASSET
-0.base=C\:\\Users\\tss\\Documents\\Skole\\SMAP\\Project\\app\\build\\intermediates\\merged_assets\\debug\\out
-1.path=classes.dex
->>>>>>> Stashed changes
->>>>>>> master
