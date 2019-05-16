@@ -25,14 +25,37 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class AppService extends Service {
 
+    private Location loc;
     private LocationManager locationManager;
     private LocationListener locationListener;
+
 
     private final IBinder binder = new AppBinder();
 
     //create binder
     public class AppBinder extends Binder {
-        public AppService getService() {  Log.i("SERVICE", "Service constructor");return AppService.this; }
+        public AppService getService() {
+            Log.i("SERVICE", "Service constructor");
+
+            locationManager = (LocationManager) getApplicationContext().getSystemService(LOCATION_SERVICE);
+            locationListener = new LocationListener() {
+                @Override
+                public void onLocationChanged(Location location) {
+                    Log.i("SERVICE", "Logging location...");
+                    loc = location;
+                }
+            };
+
+            if ( Build.VERSION.SDK_INT >= 23 &&
+                    ContextCompat.checkSelfPermission( getBaseContext(), android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED &&
+                    ContextCompat.checkSelfPermission( getBaseContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            }
+
+            Log.i("SERVICE", "Logging first location...");
+            loc = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+            return AppService.this;
+        }
     }
 
 
@@ -81,22 +104,10 @@ public class AppService extends Service {
         }
     }
 
+
+
     public void UpdateLocation(){
-        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-
-        if ( Build.VERSION.SDK_INT >= 23 &&
-                ContextCompat.checkSelfPermission( getBaseContext(), android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED &&
-                ContextCompat.checkSelfPermission( getBaseContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-
-        }
-
-        locationListener = new LocationListener() {
-            @Override
-            public void onLocationChanged(Location location) {
-                Log.i("SERVICE", "Logging location...");
-                FirebaseDatabase.getInstance().getReference("Users/" + FirebaseAuth.getInstance().getCurrentUser().getUid()).child("location").setValue(location);
-            }
-        };
-        FirebaseDatabase.getInstance().getReference("Users/" + FirebaseAuth.getInstance().getCurrentUser().getUid()).child("location").setValue(locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER));
+        FirebaseDatabase.getInstance().getReference("Users/" + FirebaseAuth.getInstance().getCurrentUser().getUid()).child("location").setValue(loc);
+        Log.i("SERVICE", "Got the location!");
     }
 }
