@@ -17,6 +17,7 @@ MERGED from [com.firebaseui:firebase-ui-database:4.3.2] C:\Users\Rune\.gradle\ca
 MERGED from [com.google.firebase:firebase-database:16.1.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\52ec6c8e22f882b07d3fe09362b55dab\AndroidManifest.xml:15:1-36:12
 MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\8608cd5c803350c0f297a834e0552f27\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:16.2.1] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\1f5122515f890c97b240a5abe50376ee\AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\d543497407fa1b27625338a9e6cb4672\AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\2533ed4ae2eda2cfa106df792409dc9c\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\6b80035cb8b0dc0e20e03c1594c7a4fa\AndroidManifest.xml:17:1-38:12
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\3c41831d29e999a11e1d8735380e0287\AndroidManifest.xml:2:1-14:12
@@ -111,6 +112,8 @@ MERGED from [com.firebaseui:firebase-ui-database:4.3.2] C:\Users\Rune\.gradle\ca
 MERGED from [com.firebaseui:firebase-ui-database:4.3.2] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\aa0fedbd7ddae768d85b37bef0af1e24\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-database:16.1.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\52ec6c8e22f882b07d3fe09362b55dab\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:16.1.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\52ec6c8e22f882b07d3fe09362b55dab\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\d543497407fa1b27625338a9e6cb4672\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\d543497407fa1b27625338a9e6cb4672\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\6b80035cb8b0dc0e20e03c1594c7a4fa\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\6b80035cb8b0dc0e20e03c1594c7a4fa\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\1864318c1ac53e73b5f11a4a0872cd12\AndroidManifest.xml:22:5-67
@@ -323,6 +326,8 @@ MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Rune\.gradle\cac
 MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\8608cd5c803350c0f297a834e0552f27\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:16.2.1] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\1f5122515f890c97b240a5abe50376ee\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:16.2.1] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\1f5122515f890c97b240a5abe50376ee\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\d543497407fa1b27625338a9e6cb4672\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\d543497407fa1b27625338a9e6cb4672\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\2533ed4ae2eda2cfa106df792409dc9c\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\2533ed4ae2eda2cfa106df792409dc9c\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\6b80035cb8b0dc0e20e03c1594c7a4fa\AndroidManifest.xml:20:5-44
@@ -467,6 +472,8 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.firebaseui:firebase-ui-auth:4.3.2] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\de42459a1e15749d188647e336d36b72\AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-database:16.1.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\52ec6c8e22f882b07d3fe09362b55dab\AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-database:16.1.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\52ec6c8e22f882b07d3fe09362b55dab\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\d543497407fa1b27625338a9e6cb4672\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\d543497407fa1b27625338a9e6cb4672\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\6b80035cb8b0dc0e20e03c1594c7a4fa\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\6b80035cb8b0dc0e20e03c1594c7a4fa\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\1864318c1ac53e73b5f11a4a0872cd12\AndroidManifest.xml:23:5-79

@@ -6,6 +6,7 @@ import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.app.ProgressDialog;
 import android.app.TaskStackBuilder;
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +15,7 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -29,6 +31,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.Fudgel.tgtgha.Database.User;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -36,7 +39,13 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageMetadata;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
+
+import java.util.UUID;
 
 public class CreateLocationActivity extends AppCompatActivity {
 
@@ -59,6 +68,8 @@ public class CreateLocationActivity extends AppCompatActivity {
     private int checkedLocation;
     private String[] Locations = {"Aarhus C", "Skejby", "Aarhus N", "Aarhus S", "Aarhus V", "Viby J"};
 
+    private ProgressDialog mProgress = new ProgressDialog(this);
+    private StorageReference userimageRef;
     private DatabaseReference databaseRef;
     private FirebaseDatabase databaseUser;
 
@@ -70,6 +81,8 @@ public class CreateLocationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_location);
+
+
 
         SetupView();
         SetupClick();
@@ -121,16 +134,42 @@ public class CreateLocationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sendLargeSizeNotification();
-
                 updateUserDatabase();
             }
         });
     }
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == CAMERA_PIC_REQUEST && resultCode == Activity.RESULT_OK) {
-            Bitmap image = (Bitmap) data.getExtras().get("data");
-            image_profile.setImageBitmap(image);
+
+            mProgress.setMessage("Uploading Image...");
+            mProgress.show();
+//            Bitmap image = (Bitmap) data.getExtras().get("data");
+////            image_profile.setImageBitmap(image);
+            Uri uri = data.getData();
+
+            saveImage(uri);
         }
+    }
+
+    private void saveImage(Uri uri){
+
+        userimageRef = FirebaseStorage.getInstance().getReference();//.child("Profile Images");
+
+        StorageReference filepath = userimageRef.child("Photos").child(firebaseUser.getUid() + ".jpg");
+
+        filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+
+                mProgress.dismiss();
+
+                Toast.makeText(CreateLocationActivity.this, "New Profile Picture saved", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+
+
     }
 
     private void displayLocationOptions() {
