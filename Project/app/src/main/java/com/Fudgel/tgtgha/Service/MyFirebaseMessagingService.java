@@ -75,17 +75,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 .setWhen(System.currentTimeMillis())
                 .setPriority( Notification.PRIORITY_MAX);
 
+        startForeground(1, notificationBuilder.build());
 
-        notificationManager.notify(1, notificationBuilder.build());
-
-
-    }
-    String getToken()
-    {
-        FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener((Executor) this, instanceIdResult -> {
-            newToken = instanceIdResult.getToken();
-            Log.e("newToken", newToken);
-        });
-        return newToken;
     }
 }

@@ -14,6 +14,7 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -36,7 +37,15 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.squareup.picasso.Picasso;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
 
 public class CreateLocationActivity extends AppCompatActivity {
 
@@ -121,7 +130,7 @@ public class CreateLocationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sendLargeSizeNotification();
-
+                getToken();
                 updateUserDatabase();
             }
         });
@@ -276,5 +285,56 @@ public class CreateLocationActivity extends AppCompatActivity {
         n.defaults |= Notification.DEFAULT_ALL;
         nm.notify(0, n);
     }
+    String getToken()
+    {
+        Log.d("Firebase", "token "+ FirebaseInstanceId.getInstance().getToken());
+        FirebaseMessaging.getInstance().subscribeToTopic("all");
+        postData();
+        return FirebaseInstanceId.getInstance().getToken();
+
+    }
+    public void postData() {
+        // Create a new HttpClient and Post Header
+        new postData().execute("");
+    }
+    private class postData extends AsyncTask<String, Void, String> {
+        @Override
+        protected String doInBackground(String... params) {
+            Toast.makeText(CreateLocationActivity.this, "Lets go ", Toast.LENGTH_LONG).show();
+            HttpClient httpclient = new DefaultHttpClient();
+            HttpPost httppost = new HttpPost("http://fcm.googleapis.com/fcm/send");
+            httppost.addHeader("Authorization", "key=AAAAfzf4YrQ:APA91bE3VEub62YIKCBaUlGkkhvTBOtVxuS-ew8iSQ_iRqjlreB81E8RZsFkPbMAZNPiCg6eI-vkYwARagLrKJRgRtyylC2FZbm224xc-10E--pgCRpG7aQw24B54Pmvnhg7DjMC65P6");
+            httppost.addHeader("Content-Type", "application/json");
+
+            String payload = "data={" +
+                    "\"title\": \"hey\", " +
+                    "\"content\": \"Test\" " +
+                    "}," +
+                    "\"to\": \"/topics/all\"";
+            try {
+                StringEntity entity = new StringEntity(payload);
+                httppost.setEntity(entity);
+                HttpResponse response = httpclient.execute(httppost);
+            }
+            catch (Exception ex){}
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+        }
+
+        @Override
+        protected void onPreExecute() {
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {
+        }
+    }
+
+
+
+
 }
 
