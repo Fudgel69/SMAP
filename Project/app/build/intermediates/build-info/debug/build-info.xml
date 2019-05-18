@@ -6,18 +6,28 @@
     density="420dpi"
     format="10"
     plugin-version="3.4.0"
+<<<<<<< HEAD
     timestamp="1558032907750"
     token="1353075982122905196"
+=======
+    timestamp="1558107355953"
+    token="934322284516709942"
+>>>>>>> master
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
+<<<<<<< HEAD
         duration="583" />
+=======
+        duration="2859" />
+>>>>>>> master
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
+<<<<<<< HEAD
         duration="86" />
     <task
         name="verifier"
@@ -61,11 +71,60 @@
         type="SPLIT" />
     <artifact
         location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+=======
+        duration="1018" />
+    <task
+        name="verifier"
+        duration="2235" />
+
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+>>>>>>> master
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
+<<<<<<< HEAD
         timestamp="1558032907750"
+=======
+        timestamp="1558107355953"
+>>>>>>> master
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -74,6 +133,7 @@
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
+<<<<<<< HEAD
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
@@ -81,17 +141,28 @@
             type="SPLIT" />
         <artifact
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+=======
+            location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+>>>>>>> master
             type="SPLIT" />
         <artifact
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
+<<<<<<< HEAD
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+=======
+            location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+>>>>>>> master
             type="SPLIT" />
         <artifact
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
+<<<<<<< HEAD
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
@@ -105,6 +176,24 @@
             type="SPLIT" />
         <artifact
             location="C:\Users\simon\Documents\GitHub\SMAP\Project\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+=======
+            location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Skole\MAL\ProjektRepo\SMAP\Project\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+>>>>>>> master
             type="SPLIT_MAIN" />
     </build>
 
