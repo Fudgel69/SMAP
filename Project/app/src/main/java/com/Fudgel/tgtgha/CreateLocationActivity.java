@@ -18,15 +18,19 @@ import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,7 +49,10 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
+import java.io.ByteArrayOutputStream;
 import java.util.UUID;
+
+import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 
 public class CreateLocationActivity extends AppCompatActivity {
 
@@ -68,7 +75,7 @@ public class CreateLocationActivity extends AppCompatActivity {
     private int checkedLocation;
     private String[] Locations = {"Aarhus C", "Skejby", "Aarhus N", "Aarhus S", "Aarhus V", "Viby J"};
 
-    private ProgressDialog mProgress = new ProgressDialog(this);
+    private ProgressDialog mProgress;
     private StorageReference userimageRef;
     private DatabaseReference databaseRef;
     private FirebaseDatabase databaseUser;
@@ -82,27 +89,53 @@ public class CreateLocationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_location);
 
-
-
+        SetupID();
+        databaseListener();
         SetupView();
         SetupClick();
     }
 
+    private void SetupID() {
 
-    private void SetupDatabase() {
+        txt_addAge = findViewById(R.id.edtxt_createlocation_addAge);
+        txt_addName = findViewById(R.id.edtxt_createlocation_addName);
+        btn_Gender = findViewById(R.id.btn_createlocation_addGender);
+        btn_Location = findViewById(R.id.btn_createlocation_addLocation);
+        btn_Search = findViewById(R.id.btn_createlocation_search);
+        image_profile = findViewById(R.id.img_createlocation_userImage);
+    }
+
+
+    private void databaseListener() {
 
         databaseUser = FirebaseDatabase.getInstance();
-        databaseRef = databaseUser.getReference("Users/" + userID);
+        databaseRef = databaseUser.getReference();
 
         databaseRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                System.out.println(snapshot.getValue());
+                showData(snapshot);
             }
             @Override
             public void onCancelled(DatabaseError databaseError) {
             }
         });
+    }
+
+    private void showData(DataSnapshot dataSnapshot){
+
+        for(DataSnapshot ds : dataSnapshot.getChildren()){
+
+            user = new User();
+
+            if (ds.child(userID).child("userAge").getValue() == null){
+                return;
+            }
+            else{
+                user.setUserAge(ds.child(userID).child("userAge").getValue().toString());
+                txt_addAge.setText(user.getUserAge());
+            }
+        }
     }
 
     private void SetupClick() {
@@ -122,11 +155,18 @@ public class CreateLocationActivity extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View v) {
-                if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-                    requestPermissions(new String[]{Manifest.permission.CAMERA}, MY_CAMERA_PERMISSION_CODE);
-                } else {
-                    Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                    startActivityForResult(cameraIntent, CAMERA_PIC_REQUEST);
+//                if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+//                    requestPermissions(new String[]{Manifest.permission.CAMERA}, MY_CAMERA_PERMISSION_CODE);
+//                } else {
+//                    Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+//                    startActivityForResult(cameraIntent, CAMERA_PIC_REQUEST);
+//                }
+//                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//
+//                startActivityForResult(intent, CAMERA_PIC_REQUEST);
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivityForResult(intent, CAMERA_PIC_REQUEST);
                 }
             }
         });
@@ -138,38 +178,45 @@ public class CreateLocationActivity extends AppCompatActivity {
             }
         });
     }
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == CAMERA_PIC_REQUEST && resultCode == Activity.RESULT_OK) {
 
+            Log.e("onActivityResult", "Called" + data);
+
+            //Loading message
+            mProgress = new ProgressDialog(this);
             mProgress.setMessage("Uploading Image...");
             mProgress.show();
-//            Bitmap image = (Bitmap) data.getExtras().get("data");
-////            image_profile.setImageBitmap(image);
-            Uri uri = data.getData();
 
-            saveImage(uri);
+            Bundle extras = data.getExtras();
+            Bitmap photo = (Bitmap)extras.get("data");
+            image_profile.setImageBitmap(photo);
+
+            saveImage(photo);
         }
     }
 
-    private void saveImage(Uri uri){
 
-        userimageRef = FirebaseStorage.getInstance().getReference();//.child("Profile Images");
+    private void saveImage(Bitmap bitmap){
 
-        StorageReference filepath = userimageRef.child("Photos").child(firebaseUser.getUid() + ".jpg");
+        Log.e("saveImage", "Called");
 
-        filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        String imageEncoded = Base64.encodeToString(baos.toByteArray(), Base64.DEFAULT);
+        DatabaseReference ref = FirebaseDatabase.getInstance()
+                .getReference()
+                .child("Users")
+                .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                .child("userImageURL");
+        ref.setValue(imageEncoded).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
+            public void onSuccess(Void aVoid) {
                 mProgress.dismiss();
-
                 Toast.makeText(CreateLocationActivity.this, "New Profile Picture saved", Toast.LENGTH_SHORT).show();
             }
         });
-
-
-
-
     }
 
     private void displayLocationOptions() {
@@ -206,70 +253,44 @@ public class CreateLocationActivity extends AppCompatActivity {
     }
 
     private void SetupView() {
-        txt_addAge = findViewById(R.id.edtxt_createlocation_addAge);
-        txt_addName = findViewById(R.id.edtxt_createlocation_addName);
-
-        btn_Gender = findViewById(R.id.btn_createlocation_addGender);
-        btn_Location = findViewById(R.id.btn_createlocation_addLocation);
-        btn_Search = findViewById(R.id.btn_createlocation_search);
-
-        btn_Search = findViewById(R.id.btn_createlocation_search);
-
-        image_profile = findViewById(R.id.img_createlocation_userImage);
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        databaseUser = FirebaseDatabase.getInstance();
+        databaseRef = databaseUser.getReference("Users/" + firebaseUser.getUid());
+
 
         userName = firebaseUser.getDisplayName();
-
         String [] names = userName.split(" ");
         txt_addName.setText(names[0]);
+
         userID = firebaseUser.getUid();
-        userName = firebaseUser.getDisplayName();
-        txt_addName.setText(userName);
 
         image_profile.setImageResource(R.drawable.ic_camera);
+
+        setUserImage();
+
+        saveUserToDatabase();
+    }
+
+    private void setUserImage() {
+
         userImageUrl = firebaseUser.getPhotoUrl().toString();
         Picasso.get().load(userImageUrl).into(image_profile);
-
-        SetupDatabase();
-        saveUserToDatabase();
-
     }
 
 
-
     private void saveUserToDatabase(){
-        user = new User();
-
-
-        if(!databaseRef.child("userAge").equals(null)){
-
-
-        }
-
-
-        user.setUserName(userName);
-        user.setUserImageURL(userImageUrl);
 
         databaseRef.child("id").setValue(userID);
-        databaseRef.child("userName").setValue(user.getUserName());
-        databaseRef.child("userImageURL").setValue(user.getUserImageURL());
-
+        databaseRef.child("userName").setValue(userName);
+        databaseRef.child("userImageURL").setValue(userImageUrl);
     }
 
     private void updateUserDatabase(){
 
-        userAge = txt_addAge.getText().toString();
-        userGender = btn_Gender.getText().toString();
-
-
-        user.setUserAge(userAge);
-        user.setUserImageURL(userImageUrl);
-        user.setUserGender(userGender);
-
-        databaseRef.child("userAge").setValue(user.getUserAge());
-        databaseRef.child("userImageURL").setValue(user.getUserImageURL());
-        databaseRef.child("userGender").setValue(user.getUserGender());
+        databaseRef.child("userAge").setValue(txt_addAge.getText().toString());
+        databaseRef.child("userImageURL").setValue(userImageUrl);
+        databaseRef.child("userGender").setValue(btn_Gender.getText().toString());
     }
 
     @Override
