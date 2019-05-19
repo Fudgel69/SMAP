@@ -24,4 +24,8 @@
     <string name="You_got_matched">Du er blevet matched</string>
     <string name="Click_to_see_your_match">Klik for at se dit match</string>
     <string name="New_Profile_Picture_saved">Nyt profilbillede gemt</string>
+    <string name="Chat">Chat</string>
+    <string name="Location">Lokation</string>
+    <string name="Go_to_crt_Route">Gå til lav rute</string>
+    <string name="LogOut">Log ud</string>
 </resources>

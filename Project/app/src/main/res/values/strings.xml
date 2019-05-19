@@ -25,4 +25,8 @@
     <string name="You_got_matched">You got matched</string>
     <string name="Click_to_see_your_match">Click to see your match</string>
     <string name="New_Profile_Picture_saved">New profile picture saved</string>
+    <string name="Chat">Chat</string>
+    <string name="Location">Location</string>
+    <string name="Go_to_crt_Route">Go to create route</string>
+    <string name="LogOut">Log Out</string>
 </resources>
