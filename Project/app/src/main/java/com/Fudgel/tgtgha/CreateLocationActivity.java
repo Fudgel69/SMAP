@@ -71,7 +71,7 @@ public class CreateLocationActivity extends AppCompatActivity {
     private String userGender;
     private String userAge;
     private int checkedGender;
-    private String[] Genders = {"Male", "Female", "Other"};
+    private String[] Genders = {getString(R.string.Male), getString(R.string.Female), getString(R.string.Other)};
     private int checkedLocation;
     private String[] Locations = {"Aarhus C", "Skejby", "Aarhus N", "Aarhus S", "Aarhus V", "Viby J"};
 
@@ -213,41 +213,41 @@ public class CreateLocationActivity extends AppCompatActivity {
             @Override
             public void onSuccess(Void aVoid) {
                 mProgress.dismiss();
-                Toast.makeText(CreateLocationActivity.this, "New Profile Picture saved", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CreateLocationActivity.this, getString(R.string.New_Profile_Picture_saved), Toast.LENGTH_SHORT).show();
             }
         });
     }
 
     private void displayLocationOptions() {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        dialogBuilder.setTitle("Choose Location");
+        dialogBuilder.setTitle(getString(R.string.Choose_Location));
         dialogBuilder.setSingleChoiceItems(Locations, checkedLocation,
                 (dialogInterface, which) -> {
                     checkedLocation = which;
                 });
-        dialogBuilder.setPositiveButton("Done", (dialog, which) -> showSelectedLocation());
+        dialogBuilder.setPositiveButton(getString(R.string.Done), (dialog, which) -> showSelectedLocation());
         dialogBuilder.create().show();
     }
 
     private void showSelectedLocation() {
-        Toast.makeText(this, "You selected: " + Locations[checkedLocation], Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.You_Selected) + ": " + Locations[checkedLocation], Toast.LENGTH_SHORT).show();
         btn_Location.setText(Locations[checkedLocation]);
     }
 
     private void displayGenderOptions() {
 
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        dialogBuilder.setTitle("Choose Genders");
+        dialogBuilder.setTitle(getString(R.string.Choose_Genders));
         dialogBuilder.setSingleChoiceItems(Genders, checkedGender,
                 (dialogInterface, which) -> {
                     checkedGender = which;
                 });
-        dialogBuilder.setPositiveButton("Done", (dialog, which) -> showSelectedGender());
+        dialogBuilder.setPositiveButton(getString(R.string.Done), (dialog, which) -> showSelectedGender());
         dialogBuilder.create().show();
     }
 
     private void showSelectedGender() {
-        Toast.makeText(this, "You selected: " + Genders[checkedGender], Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.You_Selected) + ": " + Genders[checkedGender], Toast.LENGTH_SHORT).show();
         btn_Gender.setText(Genders[checkedGender]);
     }
 
@@ -297,18 +297,17 @@ public class CreateLocationActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == MY_CAMERA_PERMISSION_CODE) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "camera permission granted", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getString(R.string.Camera_permission_granted), Toast.LENGTH_LONG).show();
                 Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(cameraIntent, CAMERA_PIC_REQUEST);
             } else {
-                Toast.makeText(this, "camera permission denied", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getString(R.string.Camera_permission_denied), Toast.LENGTH_LONG).show();
             }
         }
     }
 
     private void sendLargeSizeNotification() {
         // Sets an ID for the notification
-        Toast.makeText(this, "Lets go", Toast.LENGTH_LONG).show();
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             NotificationChannel mChannel = new NotificationChannel("myChannel", "Visible myChannel", NotificationManager.IMPORTANCE_LOW);
             NotificationManager mNotificationManager =
@@ -327,8 +326,8 @@ public class CreateLocationActivity extends AppCompatActivity {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext());
         builder.setContentIntent(contentIntent)
                 .setSmallIcon(R.mipmap.ic_new_launcher)
-                .setContentTitle("Message")
-                .setContentText("Try this out")
+                .setContentTitle(getString(R.string.You_got_matched))
+                .setContentText(getString(R.string.Click_to_see_your_match))
                 .setChannelId("myChannel");
         Notification n = builder.getNotification();
 
