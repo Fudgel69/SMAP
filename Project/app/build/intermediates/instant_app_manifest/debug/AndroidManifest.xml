@@ -15,7 +15,11 @@
     <uses-permission android:name="android.permission.ACCESS_GPS" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<<<<<<< HEAD
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+=======
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+>>>>>>> master
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -37,6 +41,13 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <service android:name="com.Fudgel.tgtgha.Service.AppService" />
+        <service
+            android:name="com.Fudgel.tgtgha.Service.MyFirebaseMessagingService"
+            android:stopWithTask="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
 
         <activity android:name="com.Fudgel.tgtgha.MatchingActivity" />
 
@@ -187,6 +198,17 @@
             android:authorities="com.Fudgel.tgtgha.lifecycle-trojan"
             android:exported="false"
             android:multiprocess="true" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
 
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
@@ -210,17 +232,6 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
             </intent-filter>
         </receiver>
-        <!--
-             FirebaseInstanceIdService performs security checks at runtime,
-             no need for explicit permissions despite exported="true"
-        -->
-        <service
-            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
-            android:exported="true" >
-            <intent-filter android:priority="-500" >
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-            </intent-filter>
-        </service>
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
