@@ -1,19 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:drawerlayout:28.0.0@aar">
     <ANNOTATIONS>
-<<<<<<< Updated upstream
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/34bb145c155fb915e96c5ef9d7b6cefd/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a5f339a2483a04774a3007da07e993b2/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/34bb145c155fb915e96c5ef9d7b6cefd/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/34bb145c155fb915e96c5ef9d7b6cefd/res" />
-=======
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/74c573d32baf2a48b24261a01d0c7fcd/annotations.zip!/" />
-    </ANNOTATIONS>
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/74c573d32baf2a48b24261a01d0c7fcd/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/74c573d32baf2a48b24261a01d0c7fcd/res" />
->>>>>>> Stashed changes
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a5f339a2483a04774a3007da07e993b2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a5f339a2483a04774a3007da07e993b2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

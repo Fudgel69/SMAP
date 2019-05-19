@@ -1,19 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:support-compat:28.0.0@aar">
     <ANNOTATIONS>
-<<<<<<< Updated upstream
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fd058002eedb6b16f16a20bd0e170a16/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ae9492f3c7496a30f6a704990ab32fb4/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fd058002eedb6b16f16a20bd0e170a16/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fd058002eedb6b16f16a20bd0e170a16/res" />
-=======
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a6e6f7acbc3f962e20d2b7d72518898/annotations.zip!/" />
-    </ANNOTATIONS>
-    <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a6e6f7acbc3f962e20d2b7d72518898/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a6e6f7acbc3f962e20d2b7d72518898/jars/classes.jar!/" />
->>>>>>> Stashed changes
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ae9492f3c7496a30f6a704990ab32fb4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ae9492f3c7496a30f6a704990ab32fb4/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

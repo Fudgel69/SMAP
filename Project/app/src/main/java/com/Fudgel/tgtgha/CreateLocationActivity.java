@@ -74,7 +74,6 @@ public class CreateLocationActivity extends AppCompatActivity {
     private String userGender;
     private String userAge;
     private int checkedGender;
-    private String[] Genders = {getString(R.string.Male), getString(R.string.Female), getString(R.string.Other)};
     private int checkedLocation;
     private String[] Locations = {"Aarhus C", "Skejby", "Aarhus N", "Aarhus S", "Aarhus V", "Viby J"};
 
@@ -272,17 +271,19 @@ public class CreateLocationActivity extends AppCompatActivity {
 
     private void displayGenderOptions() {
 
+        String [] Genders = {getString(R.string.Male), getString(R.string.Female), getString(R.string.Other)};
+
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         dialogBuilder.setTitle(getString(R.string.Choose_Genders));
         dialogBuilder.setSingleChoiceItems(Genders, checkedGender,
                 (dialogInterface, which) -> {
                     checkedGender = which;
                 });
-        dialogBuilder.setPositiveButton(getString(R.string.Done), (dialog, which) -> showSelectedGender());
+        dialogBuilder.setPositiveButton(getString(R.string.Done), (dialog, which) -> showSelectedGender(Genders));
         dialogBuilder.create().show();
     }
 
-    private void showSelectedGender() {
+    private void showSelectedGender(String[] Genders) {
         Toast.makeText(this, getString(R.string.You_Selected) + ": " + Genders[checkedGender], Toast.LENGTH_SHORT).show();
         btn_Gender.setText(Genders[checkedGender]);
     }

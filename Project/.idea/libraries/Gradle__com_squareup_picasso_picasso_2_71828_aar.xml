@@ -1,13 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.squareup.picasso:picasso:2.71828@aar">
     <CLASSES>
-<<<<<<< Updated upstream
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/edbbcb98d3ea965ac1d9f0807ac502a9/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/edbbcb98d3ea965ac1d9f0807ac502a9/res" />
-=======
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0cb91ff38494991bbd806530695f7caa/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0cb91ff38494991bbd806530695f7caa/res" />
->>>>>>> Stashed changes
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3c41831d29e999a11e1d8735380e0287/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3c41831d29e999a11e1d8735380e0287/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
