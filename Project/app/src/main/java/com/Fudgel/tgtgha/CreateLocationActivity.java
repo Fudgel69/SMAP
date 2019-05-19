@@ -46,22 +46,16 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageMetadata;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
-<<<<<<< HEAD
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-=======
+
 import java.io.ByteArrayOutputStream;
->>>>>>> master
 import java.util.UUID;
 
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
@@ -88,7 +82,6 @@ public class CreateLocationActivity extends AppCompatActivity {
     private String[] Locations = {"Aarhus C", "Skejby", "Aarhus N", "Aarhus S", "Aarhus V", "Viby J"};
 
     private ProgressDialog mProgress;
-    private StorageReference userimageRef;
     private DatabaseReference databaseRef;
     private FirebaseDatabase databaseUser;
 
@@ -101,13 +94,10 @@ public class CreateLocationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_location);
 
-<<<<<<< HEAD
         mProgress = new ProgressDialog(this);
 
-=======
         SetupID();
         databaseListener();
->>>>>>> master
         SetupView();
         SetupClick();
     }
@@ -195,6 +185,7 @@ public class CreateLocationActivity extends AppCompatActivity {
             }
         });
     }
+    @RequiresApi(api = Build.VERSION_CODES.FROYO)
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == CAMERA_PIC_REQUEST && resultCode == Activity.RESULT_OK) {
@@ -215,6 +206,7 @@ public class CreateLocationActivity extends AppCompatActivity {
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.FROYO)
     private void saveImage(Bitmap bitmap){
 
         Log.e("saveImage", "Called");
