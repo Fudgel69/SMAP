@@ -7,7 +7,6 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.ProgressDialog;
-import android.app.TaskStackBuilder;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -16,13 +15,9 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.location.Location;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.provider.ContactsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
@@ -38,7 +33,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.Fudgel.tgtgha.Model.User;
-import com.Fudgel.tgtgha.Service.AppService;
 import com.Fudgel.tgtgha.Service.MatchingService;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -71,14 +65,11 @@ public class CreateLocationActivity extends AppCompatActivity {
     private FirebaseUser firebaseUser;
     private String userID;
     private String userImageUrl;
-    private String userGender;
-    private String userAge;
     private int checkedGender;
     private int checkedLocation;
     private String[] Locations = {"Aarhus C", "Skejby", "Aarhus N", "Aarhus S", "Aarhus V", "Viby J"};
 
     private ProgressDialog mProgress;
-    private StorageReference userimageRef;
     private DatabaseReference databaseRef;
     private FirebaseDatabase databaseUser;
 
@@ -212,6 +203,7 @@ public class CreateLocationActivity extends AppCompatActivity {
             }
         });
     }
+    //@RequiresApi(api= Build)
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == CAMERA_PIC_REQUEST && resultCode == Activity.RESULT_OK) {
@@ -298,11 +290,12 @@ public class CreateLocationActivity extends AppCompatActivity {
         userName = firebaseUser.getDisplayName();
         String [] names = userName.split(" ");
         txt_addName.setText(names[0]);
-        //userImageUrl = firebaseUser.getPhotoUrl().toString();
-        userID = firebaseUser.getUid();
 
+        userID = firebaseUser.getUid();
+        userImageUrl = firebaseUser.getPhotoUrl().toString();
         image_profile.setImageResource(R.drawable.ic_camera);
 
+        setUserImage();
         saveUserToDatabase();
     }
 
@@ -322,7 +315,6 @@ public class CreateLocationActivity extends AppCompatActivity {
     private void updateUserDatabase(){
 
         databaseRef.child("userAge").setValue(txt_addAge.getText().toString());
-        databaseRef.child("userImageURL").setValue(userImageUrl);
         databaseRef.child("userGender").setValue(btn_Gender.getText().toString());
 
         databaseRef.child("Route").child("Time").setValue("test");

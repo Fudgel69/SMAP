@@ -105,7 +105,6 @@ public class AppService extends Service {
     }
 
 
-
     public void UpdateLocation(){
         FirebaseDatabase.getInstance().getReference("Users/" + FirebaseAuth.getInstance().getCurrentUser().getUid()).child("location").setValue(loc);
         Log.i("SERVICE", "Got the location!");
