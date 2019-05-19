@@ -34,9 +34,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <service android:name="com.Fudgel.tgtgha.Service.AppService" />
+        <service android:name="com.Fudgel.tgtgha.Service.MatchingService" />
 
         <activity android:name="com.Fudgel.tgtgha.MatchingActivity" />
 
@@ -283,11 +283,6 @@
                 <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
             </intent-filter>
         </receiver>
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.Fudgel.tgtgha.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>

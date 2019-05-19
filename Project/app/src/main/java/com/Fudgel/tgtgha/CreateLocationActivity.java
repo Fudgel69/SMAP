@@ -7,14 +7,22 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.ProgressDialog;
+import android.app.TaskStackBuilder;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.location.Location;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.IBinder;
+import android.provider.ContactsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
@@ -30,6 +38,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.Fudgel.tgtgha.Model.User;
+import com.Fudgel.tgtgha.Service.AppService;
+import com.Fudgel.tgtgha.Service.MatchingService;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -52,6 +62,10 @@ public class CreateLocationActivity extends AppCompatActivity {
     private Button btn_Search;
     private ImageButton image_profile;
     private User user;
+    private boolean serviceStarted;
+    private boolean bound;
+    private MatchingService matchingService;
+    private ServiceConnection serviceConnection;
 
     private String userName;
     private FirebaseUser firebaseUser;
@@ -60,7 +74,7 @@ public class CreateLocationActivity extends AppCompatActivity {
     private String userGender;
     private String userAge;
     private int checkedGender;
-    private String[] Genders = {"Male", "Female", "Other"};
+    private String[] Genders = {getString(R.string.Male), getString(R.string.Female), getString(R.string.Other)};
     private int checkedLocation;
     private String[] Locations = {"Aarhus C", "Skejby", "Aarhus N", "Aarhus S", "Aarhus V", "Viby J"};
 
@@ -82,6 +96,9 @@ public class CreateLocationActivity extends AppCompatActivity {
         mProgress = new ProgressDialog(this);
         mProgress.setMessage("Loading Information...");
         mProgress.show();
+
+        serviceStarted = false;
+        bound = false;
 
         SetupID();
         databaseListener();
@@ -191,6 +208,8 @@ public class CreateLocationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 sendLargeSizeNotification();
                 updateUserDatabase();
+                setupServiceConnection();
+                bindMatchService();
             }
         });
     }
@@ -230,41 +249,41 @@ public class CreateLocationActivity extends AppCompatActivity {
             @Override
             public void onSuccess(Void aVoid) {
                 mProgress.dismiss();
-                Toast.makeText(CreateLocationActivity.this, "New Profile Picture saved", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CreateLocationActivity.this, getString(R.string.New_Profile_Picture_saved), Toast.LENGTH_SHORT).show();
             }
         });
     }
 
     private void displayLocationOptions() {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        dialogBuilder.setTitle("Choose Location");
+        dialogBuilder.setTitle(getString(R.string.Choose_Location));
         dialogBuilder.setSingleChoiceItems(Locations, checkedLocation,
                 (dialogInterface, which) -> {
                     checkedLocation = which;
                 });
-        dialogBuilder.setPositiveButton("Done", (dialog, which) -> showSelectedLocation());
+        dialogBuilder.setPositiveButton(getString(R.string.Done), (dialog, which) -> showSelectedLocation());
         dialogBuilder.create().show();
     }
 
     private void showSelectedLocation() {
-        Toast.makeText(this, "You selected: " + Locations[checkedLocation], Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.You_Selected) + ": " + Locations[checkedLocation], Toast.LENGTH_SHORT).show();
         btn_Location.setText(Locations[checkedLocation]);
     }
 
     private void displayGenderOptions() {
 
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        dialogBuilder.setTitle("Choose Genders");
+        dialogBuilder.setTitle(getString(R.string.Choose_Genders));
         dialogBuilder.setSingleChoiceItems(Genders, checkedGender,
                 (dialogInterface, which) -> {
                     checkedGender = which;
                 });
-        dialogBuilder.setPositiveButton("Done", (dialog, which) -> showSelectedGender());
+        dialogBuilder.setPositiveButton(getString(R.string.Done), (dialog, which) -> showSelectedGender());
         dialogBuilder.create().show();
     }
 
     private void showSelectedGender() {
-        Toast.makeText(this, "You selected: " + Genders[checkedGender], Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.You_Selected) + ": " + Genders[checkedGender], Toast.LENGTH_SHORT).show();
         btn_Gender.setText(Genders[checkedGender]);
     }
 
@@ -304,6 +323,10 @@ public class CreateLocationActivity extends AppCompatActivity {
         databaseRef.child("userAge").setValue(txt_addAge.getText().toString());
         databaseRef.child("userImageURL").setValue(userImageUrl);
         databaseRef.child("userGender").setValue(btn_Gender.getText().toString());
+
+        databaseRef.child("Route").child("Time").setValue("test");
+        databaseRef.child("Route").child("Goal").setValue(Locations[checkedLocation]);
+
     }
 
     @Override
@@ -311,18 +334,17 @@ public class CreateLocationActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == MY_CAMERA_PERMISSION_CODE) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "camera permission granted", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getString(R.string.Camera_permission_granted), Toast.LENGTH_LONG).show();
                 Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(cameraIntent, CAMERA_PIC_REQUEST);
             } else {
-                Toast.makeText(this, "camera permission denied", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getString(R.string.Camera_permission_denied), Toast.LENGTH_LONG).show();
             }
         }
     }
 
     private void sendLargeSizeNotification() {
         // Sets an ID for the notification
-        Toast.makeText(this, "Lets go", Toast.LENGTH_LONG).show();
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             NotificationChannel mChannel = new NotificationChannel("myChannel", "Visible myChannel", NotificationManager.IMPORTANCE_LOW);
             NotificationManager mNotificationManager =
@@ -341,13 +363,51 @@ public class CreateLocationActivity extends AppCompatActivity {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext());
         builder.setContentIntent(contentIntent)
                 .setSmallIcon(R.mipmap.ic_new_launcher)
-                .setContentTitle("Message")
-                .setContentText("Try this out")
+                .setContentTitle(getString(R.string.You_got_matched))
+                .setContentText(getString(R.string.Click_to_see_your_match))
                 .setChannelId("myChannel");
         Notification n = builder.getNotification();
 
         n.defaults |= Notification.DEFAULT_ALL;
         nm.notify(0, n);
+    }
+
+    private void setupServiceConnection() {
+
+        serviceConnection = new ServiceConnection() {
+            @Override
+            public void onServiceConnected(ComponentName className, IBinder service) {
+                matchingService = ((MatchingService.MatchBinder) service).getService();
+                if(!serviceStarted)
+                {
+                    Log.d("Service: ", "Trying to start matching service...");
+                    matchingService.startService(new Intent(CreateLocationActivity.this, MatchingService.class));
+                    serviceStarted = true;
+                }
+                Log.d("Success: ", "MatchService connected");
+            }
+
+            @Override
+            public void onServiceDisconnected(ComponentName className) {
+                serviceStarted = false;
+                Log.d("Error: ", "MatchService disconnected");
+            }
+        };
+    }
+
+
+    public void bindMatchService(){
+        if (!bound){
+            bindService(new Intent(CreateLocationActivity.this, MatchingService.class), serviceConnection, Context.BIND_AUTO_CREATE);
+            bound = true;
+        }
+    }
+
+    public void unbindMatchService() {
+        if (bound) {
+            unbindService(serviceConnection);
+            bound = false;
+        }
     }
 }
 

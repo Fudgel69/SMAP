@@ -2,4 +2,27 @@
     <string name="app_name">TGTGHA</string>
     <string name="facebook_application_id" translatable="false">2334434279940186</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fb2334434279940186</string>
+    <string name="Route">Route</string>
+    <string name="Target_Location">Target Location:</string>
+    <string name="Choose">Choose</string>
+    <string name="Firstname">Firstname:</string>
+    <string name="Your_name">Your name</string>
+    <string name="Gender">Gender:</string>
+    <string name="Age">Age:</string>
+    <string name="Your_age">Your age</string>
+    <string name="Search">Search</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Other">Other</string>
+    <string name="Accept">Accept</string>
+    <string name="Deny">Deny</string>
+    <string name="Choose_Genders">Choose gender</string>
+    <string name="Choose_Location">Choose location</string>
+    <string name="Done">Done</string>
+    <string name="You_Selected">You selected</string>
+    <string name="Camera_permission_granted">Camera permission granted</string>
+    <string name="Camera_permission_denied">Camera permission denied</string>
+    <string name="You_got_matched">You got matched</string>
+    <string name="Click_to_see_your_match">Click to see your match</string>
+    <string name="New_Profile_Picture_saved">New profile picture saved</string>
 </resources>

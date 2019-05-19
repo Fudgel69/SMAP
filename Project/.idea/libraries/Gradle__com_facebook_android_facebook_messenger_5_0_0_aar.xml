@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.facebook.android:facebook-messenger:5.0.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/452f2df4bc7c118530b8d52b87d8676f/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/452f2df4bc7c118530b8d52b87d8676f/jars/classes.jar!/" />
+<<<<<<< Updated upstream
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/69eb66f553d1b50905569cc521e9c11c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/69eb66f553d1b50905569cc521e9c11c/res" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2b7e4c0324fdb5f2872a1c4ad1a493c7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2b7e4c0324fdb5f2872a1c4ad1a493c7/res" />
+>>>>>>> Stashed changes
     </CLASSES>
     <JAVADOC />
     <SOURCES>

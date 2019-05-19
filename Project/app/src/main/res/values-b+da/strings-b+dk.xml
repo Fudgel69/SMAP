@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TGTGHA</string>
+    <string name="Route">Rute</string>
+    <string name="Target_Location">Mål Lokation:</string>
+    <string name="Choose">Vælg</string>
+    <string name="Firstname">Fornavn:</string>
+    <string name="Your_name">Dit navn</string>
+    <string name="Gender">Køn:</string>
+    <string name="Age">Alder:</string>
+    <string name="Your_age">Din alder</string>
+    <string name="Search">Søg</string>
+    <string name="Male">Mand</string>
+    <string name="Female">Kvinde</string>
+    <string name="Other">Andet</string>
+    <string name="Accept">Accepter</string>
+    <string name="Deny">Afvis</string>
+    <string name="Choose_Genders">Vælg køn</string>
+    <string name="Choose_Location">Vælg Lokation</string>
+    <string name="Done">Færdig</string>
+    <string name="You_Selected">Du valgte</string>
+    <string name="Camera_permission_granted">Kamera tilladelse givet</string>
+    <string name="Camera_permission_denied">Kamera tilladelse afvist</string>
+    <string name="You_got_matched">Du er blevet matched</string>
+    <string name="Click_to_see_your_match">Klik for at se dit match</string>
+    <string name="New_Profile_Picture_saved">Nyt profilbillede gemt</string>
+</resources>
