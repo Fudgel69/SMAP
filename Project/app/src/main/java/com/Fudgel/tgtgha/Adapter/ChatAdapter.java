@@ -17,8 +17,6 @@ import java.util.List;
 
 public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder> {
 
-    private String currUser = FirebaseAuth.getInstance().getCurrentUser().getUid();
-
     static final class ChatViewHolder extends RecyclerView.ViewHolder {
 
         TextView name;
@@ -65,8 +63,6 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
             holder.name.setBackgroundColor(Color.GREEN);
             holder.message.setBackgroundColor(Color.GREEN);
             holder.messageHolder.setCardBackgroundColor(Color.GREEN);
-
         }
-
     }
 }

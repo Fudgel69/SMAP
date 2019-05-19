@@ -6,9 +6,7 @@ public class ChatModel {
     private String Message;
     private String Name;
 
-    public ChatModel(){
-
-    }
+    public ChatModel(){ }
 
     public String getID() { return ID; }
 
@@ -29,6 +27,4 @@ public class ChatModel {
     public void setName(String name) {
         Name = name;
     }
-
-
 }

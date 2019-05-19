@@ -2,29 +2,17 @@ package com.Fudgel.tgtgha.Service;
 
 import android.app.Service;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.location.Location;
-import android.location.LocationManager;
 import android.os.Binder;
-import android.os.Build;
 import android.os.IBinder;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.Fudgel.tgtgha.Model.RouteModel;
-import com.Fudgel.tgtgha.R;
-import com.google.android.gms.location.LocationListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 import java.util.Date;
-
-import okhttp3.Route;
 
 public class MatchingService extends Service {
 
@@ -63,8 +51,6 @@ public class MatchingService extends Service {
     public void onCreate(){
         super.onCreate();
         Log.e("MATCH","onCreate");
-
-
     }
 
 
@@ -93,7 +79,6 @@ public class MatchingService extends Service {
         if (!foundMatch){
             waitingForMatch(dataSnapshot);
         }
-
     }
 
     public void waitingForMatch(DataSnapshot dataSnapshot){
@@ -121,7 +106,6 @@ public class MatchingService extends Service {
                 Log.e("Chat","ERROR: " + databaseError.getMessage());
             }
         });
-
     }
 
     public void makeChat(DataSnapshot dataSnapshot, String id){

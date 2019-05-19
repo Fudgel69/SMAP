@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-46:12
+ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.2] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\de42459a1e15749d188647e336d36b72\AndroidManifest.xml:2:1-109:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\98983a062dcaa9a9b49f4fed20b8ef1c\AndroidManifest.xml:17:1-24:12
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\727e720ded6bbd09aac009e252a97baf\AndroidManifest.xml:6:1-16:12
@@ -83,20 +83,20 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Rune\.gradle\caches
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\49fe13e6857ca8e46fcf4245cf111ab4\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\d2ceca36899b634800ba8f12408862c5\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\e8d25332a6db23e86ff4ee987bb5a444\AndroidManifest.xml:2:1-7:12
-INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-46:12
-INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml
-		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-46:12
+		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml
-		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-46:12
+		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:2:11-69
@@ -157,7 +157,7 @@ MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Rune\.gr
 	android:required
 		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:15:9-32
 application
-ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:17:5-44:19
+ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:17:5-41:19
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.2] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\de42459a1e15749d188647e336d36b72\AndroidManifest.xml:15:5-107:19
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.2] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\de42459a1e15749d188647e336d36b72\AndroidManifest.xml:15:5-107:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\Rune\.gradle\caches\transforms-2\files-2.1\98983a062dcaa9a9b49f4fed20b8ef1c\AndroidManifest.xml:22:5-20
@@ -270,40 +270,28 @@ ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xm
 		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:30:13-68
 	android:name
 		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:29:13-58
-activity#com.Fudgel.tgtgha.LocationActivity
-ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:32:9-54
-	android:name
-		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:32:19-51
 activity#com.Fudgel.tgtgha.ChatActivity
-ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:33:9-50
+ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:32:9-50
 	android:name
-		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:33:19-47
-activity#com.Fudgel.tgtgha.RequestActivity
-ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:34:9-53
-	android:name
-		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:34:19-50
+		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:32:19-47
 activity#com.Fudgel.tgtgha.CreateLocationActivity
-ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:35:9-60
+ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:33:9-60
 	android:name
-		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:35:19-57
-activity#com.Fudgel.tgtgha.EditUserActivity
-ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:36:9-54
-	android:name
-		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:36:19-51
+		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:33:19-57
 activity#com.Fudgel.tgtgha.MainActivity
-ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:37:9-43:20
+ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:34:9-40:20
 	android:name
-		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:37:19-47
+		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:34:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:38:13-42:29
+ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN
-ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:39:17-69
+ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:39:25-66
+		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:41:17-77
+ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:38:17-77
 	android:name
-		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:41:27-74
+		ADDED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml:38:27-74
 uses-sdk
 INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Skole\MAL\ProjektRepo\SMAP\Project\app\src\main\AndroidManifest.xml
