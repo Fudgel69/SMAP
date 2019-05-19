@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.Fudgel.tgtgha.Fragment.ChatFragment;
 import com.Fudgel.tgtgha.Fragment.MapFragment;
@@ -23,7 +24,7 @@ public class ChatActivity extends AppCompatActivity {
     private AppService appService;
     private ServiceConnection appServiceConnection;
 
-    private Button btnMap, btnChat;
+    private ImageButton btnMap, btnChat;
 
     private Boolean bound;
     private Boolean serviceStarted;

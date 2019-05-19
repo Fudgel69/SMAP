@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.Fudgel.tgtgha.Service.AppService;
@@ -44,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
     private AppService appService;
     private Boolean bound = false;
 
-    private Button locButton;
-    private Button chatButton;
-    private Button signOutButton;
+    private ImageButton locButton;
+    private ImageButton chatButton;
+    private ImageButton signOutButton;
 
 
     @Override
