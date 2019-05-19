@@ -8,16 +8,20 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.ProgressDialog;
 import android.app.TaskStackBuilder;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
@@ -35,6 +39,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.Fudgel.tgtgha.Database.User;
+import com.Fudgel.tgtgha.Service.AppService;
+import com.Fudgel.tgtgha.Service.MatchingService;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -63,6 +69,10 @@ public class CreateLocationActivity extends AppCompatActivity {
     private Button btn_Search;
     private ImageButton image_profile;
     private User user;
+    private boolean serviceStarted;
+    private boolean bound;
+    private MatchingService matchingService;
+    private ServiceConnection serviceConnection;
 
     private String userName;
     private FirebaseUser firebaseUser;
@@ -88,6 +98,9 @@ public class CreateLocationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_location);
+
+        serviceStarted = false;
+        bound = false;
 
         SetupID();
         databaseListener();
@@ -174,6 +187,8 @@ public class CreateLocationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 sendLargeSizeNotification();
                 updateUserDatabase();
+                setupServiceConnection();
+                bindMatchService();
             }
         });
     }
@@ -290,6 +305,10 @@ public class CreateLocationActivity extends AppCompatActivity {
         databaseRef.child("userAge").setValue(txt_addAge.getText().toString());
         databaseRef.child("userImageURL").setValue(userImageUrl);
         databaseRef.child("userGender").setValue(btn_Gender.getText().toString());
+
+        databaseRef.child("Route").child("Time").setValue("test");
+        databaseRef.child("Route").child("Goal").setValue(Locations[checkedLocation]);
+
     }
 
     @Override
@@ -333,6 +352,44 @@ public class CreateLocationActivity extends AppCompatActivity {
 
         n.defaults |= Notification.DEFAULT_ALL;
         nm.notify(0, n);
+    }
+
+    private void setupServiceConnection() {
+
+        serviceConnection = new ServiceConnection() {
+            @Override
+            public void onServiceConnected(ComponentName className, IBinder service) {
+                matchingService = ((MatchingService.MatchBinder) service).getService();
+                if(!serviceStarted)
+                {
+                    Log.d("Service: ", "Trying to start matching service...");
+                    matchingService.startService(new Intent(CreateLocationActivity.this, MatchingService.class));
+                    serviceStarted = true;
+                }
+                Log.d("Success: ", "MatchService connected");
+            }
+
+            @Override
+            public void onServiceDisconnected(ComponentName className) {
+                serviceStarted = false;
+                Log.d("Error: ", "MatchService disconnected");
+            }
+        };
+    }
+
+
+    public void bindMatchService(){
+        if (!bound){
+            bindService(new Intent(CreateLocationActivity.this, MatchingService.class), serviceConnection, Context.BIND_AUTO_CREATE);
+            bound = true;
+        }
+    }
+
+    public void unbindMatchService() {
+        if (bound) {
+            unbindService(serviceConnection);
+            bound = false;
+        }
     }
 }
 

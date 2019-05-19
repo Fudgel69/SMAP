@@ -8,7 +8,7 @@ public class RouteModel {
     private String Users;
 
     public RouteModel(){
-        Users = "";
+        Users = "userz";
     }
 
     public String getID() { return ID; }
