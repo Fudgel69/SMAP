@@ -7,18 +7,14 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.ProgressDialog;
-import android.app.TaskStackBuilder;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
@@ -30,11 +26,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.Fudgel.tgtgha.Database.User;
+import com.Fudgel.tgtgha.Model.User;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -43,16 +38,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageMetadata;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
 import java.io.ByteArrayOutputStream;
-import java.util.UUID;
-
-import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 
 public class CreateLocationActivity extends AppCompatActivity {
 
@@ -88,6 +77,11 @@ public class CreateLocationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_location);
+
+        // Start Loading progress, ends after all data is loaded from DB.
+        mProgress = new ProgressDialog(this);
+        mProgress.setMessage("Loading Information...");
+        mProgress.show();
 
         SetupID();
         databaseListener();
@@ -127,14 +121,37 @@ public class CreateLocationActivity extends AppCompatActivity {
         for(DataSnapshot ds : dataSnapshot.getChildren()){
 
             user = new User();
+            Object userAge = ds.child(userID).child("userAge").getValue();
+            Object userImage = ds.child(userID).child("userImageBitmap").getValue();
+            Object userGender = ds.child(userID).child("userGender").getValue();
 
-            if (ds.child(userID).child("userAge").getValue() == null){
+            // Display User age
+            if (userAge != null){
+                user.setUserAge(userAge.toString());
+                txt_addAge.setText(user.getUserAge());
+            }
+
+            // Profile Picture:
+            // sets picture til Authentication profile image
+            // unless the user has saved a new image
+            if (userImage != null){
+                String bitmap = (userImage.toString());
+
+                byte[] decodeString = Base64.decode(bitmap, Base64.DEFAULT);
+                Bitmap decoded = BitmapFactory.decodeByteArray(decodeString, 0, decodeString.length);
+                image_profile.setImageBitmap(decoded);
+            }
+
+            // Display User Gender
+            if (userGender == null || userGender == "Choose"){
                 return;
             }
             else{
-                user.setUserAge(ds.child(userID).child("userAge").getValue().toString());
-                txt_addAge.setText(user.getUserAge());
+                user.setUserGender(userGender.toString());
+                btn_Gender.setText(user.getUserGender());
             }
+
+            mProgress.dismiss();
         }
     }
 
@@ -208,7 +225,7 @@ public class CreateLocationActivity extends AppCompatActivity {
                 .getReference()
                 .child("Users")
                 .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                .child("userImageURL");
+                .child("userImageBitmap");
         ref.setValue(imageEncoded).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
@@ -261,18 +278,15 @@ public class CreateLocationActivity extends AppCompatActivity {
         userName = firebaseUser.getDisplayName();
         String [] names = userName.split(" ");
         txt_addName.setText(names[0]);
-
+        //userImageUrl = firebaseUser.getPhotoUrl().toString();
         userID = firebaseUser.getUid();
 
         image_profile.setImageResource(R.drawable.ic_camera);
-
-        setUserImage();
 
         saveUserToDatabase();
     }
 
     private void setUserImage() {
-
         userImageUrl = firebaseUser.getPhotoUrl().toString();
         Picasso.get().load(userImageUrl).into(image_profile);
     }
