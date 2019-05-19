@@ -29,11 +29,8 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCghHiUv0P4HMxrVyZfnjh9xCNcfyLBsR0" />
 
-        <activity android:name=".LocationActivity" />
         <activity android:name=".ChatActivity" />
-        <activity android:name=".RequestActivity" />
         <activity android:name=".CreateLocationActivity" />
-        <activity android:name=".EditUserActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

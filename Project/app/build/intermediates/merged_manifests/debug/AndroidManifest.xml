@@ -33,7 +33,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <service android:name="com.Fudgel.tgtgha.Service.AppService" />
         <service android:name="com.Fudgel.tgtgha.Service.MatchingService" />
@@ -44,11 +43,8 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCghHiUv0P4HMxrVyZfnjh9xCNcfyLBsR0" />
 
-        <activity android:name="com.Fudgel.tgtgha.LocationActivity" />
         <activity android:name="com.Fudgel.tgtgha.ChatActivity" />
-        <activity android:name="com.Fudgel.tgtgha.RequestActivity" />
         <activity android:name="com.Fudgel.tgtgha.CreateLocationActivity" />
-        <activity android:name="com.Fudgel.tgtgha.EditUserActivity" />
         <activity android:name="com.Fudgel.tgtgha.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -283,11 +279,6 @@
                 <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
             </intent-filter>
         </receiver>
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.Fudgel.tgtgha.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>

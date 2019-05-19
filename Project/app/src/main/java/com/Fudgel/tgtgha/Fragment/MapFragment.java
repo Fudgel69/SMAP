@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.Fudgel.tgtgha.Model.ChatModel;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -30,11 +29,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.util.Date;
 
 
 public class MapFragment extends Fragment {
@@ -73,8 +69,6 @@ public class MapFragment extends Fragment {
 
                 map = mMap;
 
-                LatLng latLng = new LatLng(myLocation.getLatitude(),myLocation.getLongitude());
-
                 map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
                 map.clear(); //clear old markers
@@ -95,10 +89,7 @@ public class MapFragment extends Fragment {
                         .position(new LatLng(56.156635, 10.210365))
                         .title("Location of da frand"));
 
-
-
                 map.animateCamera(CameraUpdateFactory.newCameraPosition(googlePlex), 1000, null);
-
             }
         });
 
@@ -122,11 +113,9 @@ public class MapFragment extends Fragment {
                 }
             }
         });
-
     }
 
     public void getFriends(){
-
 
         FirebaseDatabase.getInstance().getReference().addValueEventListener(new ValueEventListener() {
             @Override
@@ -141,7 +130,6 @@ public class MapFragment extends Fragment {
                 Toast.makeText(getContext(), "Connection refused!", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 
     public void handleFirends(DataSnapshot dataSnapshot){
@@ -174,6 +162,5 @@ public class MapFragment extends Fragment {
                 .center(areaGoal)
                 .radius(500)
                 .strokeColor(Color.RED));
-
     }
 }
