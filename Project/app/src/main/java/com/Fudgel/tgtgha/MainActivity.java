@@ -1,5 +1,9 @@
 package com.Fudgel.tgtgha;
 
+//Ref:
+//Firebase:
+//         Authentication: - https://www.youtube.com/watch?v=EO-_vwfVi7c
+
 import android.Manifest;
 import android.content.ComponentName;
 import android.content.Context;

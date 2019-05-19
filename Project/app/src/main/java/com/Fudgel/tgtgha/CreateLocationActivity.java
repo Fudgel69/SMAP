@@ -1,5 +1,12 @@
 package com.Fudgel.tgtgha;
 
+//Ref:
+//Firebase:
+//        Storage:  - Firebase: https://www.youtube.com/watch?v=Zy2DKo0v-OY
+//                  -  https://www.learnhowtoprogram.com/android/gestures-animations-flexible-uis/using-the-camera-and-saving-images-to-firebase
+//
+//        Realtime: - https://www.youtube.com/watch?time_continue=178&v=2duc77R4Hqw
+
 import android.Manifest;
 import android.app.Activity;
 import android.app.Notification;
