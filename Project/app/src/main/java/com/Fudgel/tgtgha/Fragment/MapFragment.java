@@ -132,6 +132,7 @@ public class MapFragment extends Fragment {
         });
     }
 
+    //Pins matched user to the map
     public void handleFirends(DataSnapshot dataSnapshot){
 
         map.clear();

@@ -54,7 +54,7 @@ public class MatchingService extends Service {
     }
 
 
-
+    //Tries to match, if no match is found, waitingForMatch is run
     public void matchOrCreate(DataSnapshot dataSnapshot){
 
         Boolean foundMatch = false;
@@ -81,6 +81,7 @@ public class MatchingService extends Service {
         }
     }
 
+    //Makes a new route in the Firebase database and waits for a match
     public void waitingForMatch(DataSnapshot dataSnapshot){
         boolean updated = false;
         String id = String.valueOf(new Date().getTime());
@@ -108,12 +109,14 @@ public class MatchingService extends Service {
         });
     }
 
+    // Makes new chat for route
     public void makeChat(DataSnapshot dataSnapshot, String id){
         FirebaseDatabase.getInstance().getReference().child("chats").child(id).child("users").child("1").setValue(FirebaseAuth.getInstance().getUid());
         FirebaseDatabase.getInstance().getReference().child("chats").child(id).child("users").child("2").setValue(dataSnapshot.getValue().toString());
         FirebaseDatabase.getInstance().getReference().child("Users").child(FirebaseAuth.getInstance().getUid()).child("Chat").setValue(id);
     }
 
+    //Returns distance in meters between the matched users
     public double getDistance(DataSnapshot dataSnapshot, String uid){
 
         String chat = dataSnapshot.child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("Chat").getValue().toString();

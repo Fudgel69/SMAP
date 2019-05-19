@@ -75,6 +75,32 @@ public class AppService extends Service {
         }
     }
 
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        Log.i("SERVICE", "Service created");
+        new BackgroundTask().execute();
+    }
+
+
+    @Override
+    public IBinder onBind(Intent intent){
+        Log.i("SERVICE", "Service bound, returning bool");return binder;
+    }
+
+
+    @Override
+    public boolean onUnbind (Intent intent){Log.i("SERVICE", "Service bound");return super.onUnbind(intent);}
+
+
+    //stops the Service task, when the application is removed from the "last used"-listen
+    @Override
+    public void onTaskRemoved(Intent rootIntent) {
+        super.onTaskRemoved(rootIntent);
+        stopSelf();
+    }
+
+
     private void createNotificationChannel() {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
 
@@ -86,7 +112,7 @@ public class AppService extends Service {
         }
     }
 
-
+    //Subscribes to the registered chat, to get notifications for new messages
     public void subscribeToChat(DataSnapshot dataSnapshot){
 
         String id = dataSnapshot.child("Users").child(FirebaseAuth.getInstance().getUid()).child("Chat").getValue().toString();
@@ -116,32 +142,7 @@ public class AppService extends Service {
     }
 
 
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        Log.i("SERVICE", "Service created");
-        new BackgroundTask().execute();
-    }
-
-
-    @Override
-    public IBinder onBind(Intent intent){
-        Log.i("SERVICE", "Service bound, returning bool");return binder;
-    }
-
-
-    @Override
-    public boolean onUnbind (Intent intent){Log.i("SERVICE", "Service bound");return super.onUnbind(intent);}
-
-
-    //stops the Service task, when the application is removed from the "last used"-listen
-    @Override
-    public void onTaskRemoved(Intent rootIntent) {
-        super.onTaskRemoved(rootIntent);
-        stopSelf();
-    }
-
+    //Runs UpdateLocation every 20 seconds
     private class BackgroundTask extends AsyncTask<String, String, String> {
 
         @Override
@@ -159,7 +160,7 @@ public class AppService extends Service {
         }
     }
 
-
+    //Saves current location to Firebase Database
     public void UpdateLocation(){
         FirebaseDatabase.getInstance().getReference("Users/" + FirebaseAuth.getInstance().getCurrentUser().getUid()).child("location").setValue(loc);
         Log.i("SERVICE", "Got the location!");

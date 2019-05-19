@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-location:16.0.0@aar">
     <CLASSES>
+<<<<<<< Updated upstream
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2533ed4ae2eda2cfa106df792409dc9c/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2533ed4ae2eda2cfa106df792409dc9c/jars/classes.jar!/" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2970c6dee7193ab961a26dd02044c8f7/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2970c6dee7193ab961a26dd02044c8f7/jars/classes.jar!/" />
+>>>>>>> Stashed changes
     </CLASSES>
     <JAVADOC />
     <SOURCES />
