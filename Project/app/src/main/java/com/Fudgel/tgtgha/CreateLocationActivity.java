@@ -77,7 +77,7 @@ public class CreateLocationActivity extends AppCompatActivity {
     private int checkedLocation;
     private String[] Locations = {"Aarhus C", "Skejby", "Aarhus N", "Aarhus S", "Aarhus V", "Viby J"};
 
-    private ProgressDialog mProgress = new ProgressDialog(this);
+    private ProgressDialog mProgress;
     private StorageReference userimageRef;
     private DatabaseReference databaseRef;
     private FirebaseDatabase databaseUser;
@@ -91,7 +91,7 @@ public class CreateLocationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_location);
 
-
+        mProgress = new ProgressDialog(this);
 
         SetupView();
         SetupClick();
@@ -143,7 +143,6 @@ public class CreateLocationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sendLargeSizeNotification();
-                getToken();
                 updateUserDatabase();
             }
         });
@@ -325,56 +324,6 @@ public class CreateLocationActivity extends AppCompatActivity {
         n.defaults |= Notification.DEFAULT_ALL;
         nm.notify(0, n);
     }
-    String getToken()
-    {
-        Log.d("Firebase", "token "+ FirebaseInstanceId.getInstance().getToken());
-        FirebaseMessaging.getInstance().subscribeToTopic("all");
-        postData();
-        return FirebaseInstanceId.getInstance().getToken();
-
-    }
-    public void postData() {
-        // Create a new HttpClient and Post Header
-        new postData().execute("");
-    }
-    private class postData extends AsyncTask<String, Void, String> {
-        @Override
-        protected String doInBackground(String... params) {
-            Toast.makeText(CreateLocationActivity.this, "Lets go ", Toast.LENGTH_LONG).show();
-            HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://fcm.googleapis.com/fcm/send");
-            httppost.addHeader("Authorization", "key=AAAAfzf4YrQ:APA91bE3VEub62YIKCBaUlGkkhvTBOtVxuS-ew8iSQ_iRqjlreB81E8RZsFkPbMAZNPiCg6eI-vkYwARagLrKJRgRtyylC2FZbm224xc-10E--pgCRpG7aQw24B54Pmvnhg7DjMC65P6");
-            httppost.addHeader("Content-Type", "application/json");
-
-            String payload = "data={" +
-                    "\"title\": \"hey\", " +
-                    "\"content\": \"Test\" " +
-                    "}," +
-                    "\"to\": \"/topics/all\"";
-            try {
-                StringEntity entity = new StringEntity(payload);
-                httppost.setEntity(entity);
-                HttpResponse response = httpclient.execute(httppost);
-            }
-            catch (Exception ex){}
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-        }
-
-        @Override
-        protected void onPreExecute() {
-        }
-
-        @Override
-        protected void onProgressUpdate(Void... values) {
-        }
-    }
-
-
-
 
 }
 

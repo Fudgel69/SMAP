@@ -1,4 +1,4 @@
-#Thu May 16 20:55:11 CEST 2019
+#Sat May 18 13:16:41 CEST 2019
 base.0=C\:\\Users\\simon\\Documents\\GitHub\\SMAP\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 path.0=classes.dex
 renamed.0=classes.dex
