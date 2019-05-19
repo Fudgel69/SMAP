@@ -14,13 +14,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:text="@string/Choose"
         app:layout_constraintBottom_toBottomOf="@+id/txt_createlocation_target"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.831"
         app:layout_constraintStart_toEndOf="@+id/txt_createlocation_gender"
         app:layout_constraintTop_toTopOf="@+id/txt_createlocation_target"
-        app:layout_constraintVertical_bias="0.586"
-        tools:text="@string/Choose" />
+        app:layout_constraintVertical_bias="0.586" />
 
     <Button
         android:id="@+id/btn_createlocation_addGender"
@@ -28,13 +28,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:text="@string/Choose"
         app:layout_constraintBottom_toBottomOf="@+id/txt_createlocation_gender"
         app:layout_constraintEnd_toEndOf="@+id/edtxt_createlocation_addName"
         app:layout_constraintHorizontal_bias="0.831"
         app:layout_constraintStart_toStartOf="@+id/edtxt_createlocation_addName"
         app:layout_constraintTop_toTopOf="@+id/txt_createlocation_gender"
-        app:layout_constraintVertical_bias="0.586"
-        tools:text="@string/Choose" />
+        app:layout_constraintVertical_bias="0.586" />
 
     <TextView
         android:id="@+id/txt_createlocation_title"
@@ -61,11 +61,11 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:text="@string/Target_Location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_createlocation_title"
-        tools:text="@string/Target_Location" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_createlocation_title" />
 
     <TextView
         android:id="@+id/txt_createlocation_name"
@@ -76,11 +76,11 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:text="@string/Firstname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_createlocation_target"
-        tools:text="@string/Firstname" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_createlocation_target" />
 
     <TextView
         android:id="@+id/txt_createlocation_gender"
@@ -104,11 +104,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="50dp"
+        android:text="@string/Age"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_createlocation_gender"
-        tools:text="@string/Age" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_createlocation_gender" />
 
     <Button
         android:id="@+id/btn_createlocation_search"
@@ -116,13 +116,12 @@
         android:layout_height="0dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="8dp"
-        android:text="Search"
+        android:text="@string/Search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_createlocation_userImage"
-        tools:text="@string/Search" />
+        app:layout_constraintTop_toBottomOf="@+id/img_createlocation_userImage" />
 
     <EditText
         android:id="@+id/edtxt_createlocation_addName"
