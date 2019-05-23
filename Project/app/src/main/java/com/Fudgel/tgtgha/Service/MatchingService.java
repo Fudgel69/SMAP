@@ -66,7 +66,7 @@ public class MatchingService extends Service {
                 if (!item.child("Users").child("1").getValue().toString().equals(FirebaseAuth.getInstance().getUid()) &&
                         item.child("time").getValue().toString().equals(dataSnapshot.child("Users").child(FirebaseAuth.getInstance().getUid()).child("Route").child("Time").getValue().toString()) &&
                         item.child("goal").getValue().toString().equals(dataSnapshot.child("Users").child(FirebaseAuth.getInstance().getUid()).child("Route").child("Goal").getValue().toString()) &&
-                        getDistance(dataSnapshot, item.child("Users").child("1").getValue().toString()) < 2000) {
+                        getDistance(dataSnapshot, item.child("Users").child("1").getValue().toString()) < 10000) {
                     Log.e("MATCH", item.toString());
                     FirebaseDatabase.getInstance().getReference("routes/" + item.getKey()).child("Users").child("2").setValue(FirebaseAuth.getInstance().getUid());
                     FirebaseDatabase.getInstance().getReference("Users").child(FirebaseAuth.getInstance().getUid()).child("Chat").setValue(item.getKey());

@@ -115,30 +115,34 @@ public class AppService extends Service {
     //Subscribes to the registered chat, to get notifications for new messages
     public void subscribeToChat(DataSnapshot dataSnapshot){
 
-        String id = dataSnapshot.child("Users").child(FirebaseAuth.getInstance().getUid()).child("Chat").getValue().toString();
+        try{
+            String id = dataSnapshot.child("Users").child(FirebaseAuth.getInstance().getUid()).child("Chat").getValue().toString();
 
-        FirebaseDatabase.getInstance().getReference().child("chats").child(id).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Log.d("MATCH","New message");
+            FirebaseDatabase.getInstance().getReference().child("chats").child(id).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    Log.d("MATCH","New message");
 
-                Notification notification =
-                        new NotificationCompat.Builder(getApplicationContext(), "Notify")
-                                .setSmallIcon(R.drawable.messenger_bubble_small_blue)
-                                .setContentTitle("Message!")
-                                .setContentText("You got a new message!")
-                                .build();
+                    Notification notification =
+                            new NotificationCompat.Builder(getApplicationContext(), "Notify")
+                                    .setSmallIcon(R.drawable.messenger_bubble_small_blue)
+                                    .setContentTitle("Message!")
+                                    .setContentText("You got a new message!")
+                                    .build();
 
-                NotificationManagerCompat notificationManager = NotificationManagerCompat.from(getApplicationContext());
-                notificationManager.notify(123, notification);
+                    NotificationManagerCompat notificationManager = NotificationManagerCompat.from(getApplicationContext());
+                    notificationManager.notify(123, notification);
 
-            }
+                }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.e("Chat","ERROR: " + databaseError.getMessage());
-            }
-        });
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    Log.e("Chat","ERROR: " + databaseError.getMessage());
+                }
+            });
+        }catch (Exception e){
+            Log.e("Lol", "try-catching is fun");
+        }
     }
 
 
