@@ -158,6 +158,7 @@ public class CreateLocationActivity extends AppCompatActivity {
 
             // Display User Gender
             if (userGender == null || userGender == "Choose"){
+                mProgress.dismiss();
                 return;
             }
             else{
