@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -89,6 +90,8 @@ public class MapFragment extends Fragment {
                         .position(new LatLng(56.156635, 10.210365))
                         .title("Location of da frand"));
 
+
+
                 map.animateCamera(CameraUpdateFactory.newCameraPosition(googlePlex), 1000, null);
             }
         });
@@ -121,7 +124,11 @@ public class MapFragment extends Fragment {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Log.d("Chat","SUCCESS!");
-                handleFirends(dataSnapshot);
+                try{
+                    handleFirends(dataSnapshot);
+                } catch (Exception e) {
+                    Log.e("MapFragment:", "Exception men handling friends - " + e);
+                }
             }
 
             @Override
@@ -157,6 +164,27 @@ public class MapFragment extends Fragment {
                     .position(loc)
                     .title(dataSnapshot.child("Users").child(dataSnapshot.child("chats").child(chat).child("users").child("2").getValue().toString()).child("userName").getValue().toString())
             );
+        }
+
+        switch (dataSnapshot.child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("Route").child("Goal").getValue().toString()){
+            case "Skejby":
+                areaGoal = new LatLng(56.2,10.180556);
+                break;
+            case "Viby J":
+                areaGoal = new LatLng(56.125, 10.161111);
+                break;
+            case "Aarhus C":
+                areaGoal = new LatLng(56.162937, 10.203921);
+                break;
+            case "Aarhus V":
+                areaGoal = new LatLng(56.171597, 10.163039);
+                break;
+            case "Aarhus N":
+                areaGoal = new LatLng(56.188264, 10.196372);
+                break;
+            case "Aarhus S":
+                areaGoal = new LatLng(56.125, 10.161111);
+                break;
         }
 
         map.addCircle(new CircleOptions()
