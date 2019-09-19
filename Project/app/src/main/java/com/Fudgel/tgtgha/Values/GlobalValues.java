@@ -1,4 +1,4 @@
 package com.Fudgel.tgtgha.Values;
 
-public class DatabaseValues {
+public class GlobalValues {
 }
